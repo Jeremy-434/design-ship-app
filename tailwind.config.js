@@ -1,8 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./public/plugins.html'],
+
+  darkMode: 'class',
+  content: [
+    './public/index.html',
+    './public/login/login.html',
+    './public/plugins.html'
+  ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'fredoka' : ['Fredoka', 'sans-serif']
+    },
+    extend: {
+      colors: {
+        'ship-purple-1': '#270C54',
+        'ship-purple-2': '#501465',
+        'ship-purple-footer-1': '#231630',
+        'ship-purple-footer-2': '#431283',
+      },
+    },
   },
   plugins: [],
 }
