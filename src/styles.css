@@ -1,3 +1,13 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .btn-primary-darkmode {
+      @apply lg:inline-block lg:ml-auto lg:mr-3 py-2 px-3 bg-gradient-to-r from-emerald-500 to-blue-700 text-sm text-white font-medium rounded-xl transition duration-200 my-4;
+    }
+  }
+
