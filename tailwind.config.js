@@ -5,7 +5,8 @@ module.exports = {
     './public/index.html',
     './public/login/login.html',
     './public/plantillasweb/plantillas.html',
-    './public/register/register.html'
+    './public/register/register.html',
+    './public/shoppingCart/shoppingCart.html'
   ],
   theme: {
     fontFamily: {
