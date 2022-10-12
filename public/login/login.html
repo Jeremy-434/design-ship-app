@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/build/styles.css">
     <link rel="icon" type="image/x-icon" href="/public/imgs/logo.png">
-    <title>login - Design Ship</title>
+    <title>Log in - Design Ship</title>
 </head>
 
 <body>
@@ -16,33 +16,48 @@
         <div class="w-full h-[4rem] border-2 border-black dark:border-white"><i class="text-4xl cursor-pointer"
                 onclick="darkmode()">🌙</i></div>
 
+
+        <button class="btn-primary-darkmode cta" type="button">
+            LOG IN
+        </button>
         <!-- FORMULARIO DE INGRESO -->
-        <div class="mt-6">
-            <div class="text-center flex flex-col justify-center self-center">
-                <h2 class="text-3xl font-medium m-2">LOGIN</h2>
-                <div class="">
-                    <input
-                        class="w-7/12 sm:w-[270px] mx-2 my-6 mb-0 sm:mx-6 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
-                        type="text" placeholder="Ingrese su usuario o correo">
-                </div>
-                <div>
-                    <input
-                        class="w-7/12 sm:w-[270px] mx-2 my-6 sm:m-6 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
-                        type="text" placeholder="Ingrese su contraseña">
-                </div>
-                <div class="my-4 lg:my-8">
-                    <p class="text-xs sm:text-sm">Olvide mi contraseña. <i
-                            class="text-sky-400 font-medium">Recuerdame</i></p>
-                    <div>
-                        <!-- <button
-                            class="lg:inline-block lg:ml-auto lg:mr-3 py-2 px-3 bg-gradient-to-r from-green-500 via-sky-400 to-blue-700 hover:from-purple-500 hover:to-emerald-500 text-sm text-white font-bold rounded-xl transition duration-200 my-4">INGRESAR
-                        </button> -->
-                        <button class="btn-primary-darkmode">INGRESAR
-                        </button>
+        <div
+            class="modal-container modal hidden overflow-y-auto overflow-x-auto fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full flex justify-center items-center bg-black/50">
+            <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+                <!-- Modal content -->
+                <div
+                    class="relative bg-gray-100 rounded-lg shadow-2xl dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300 py-6">
+                    <div class="my-8">
+                        <div class="text-center flex flex-col justify-center self-center">
+                            <i
+                                class="bg-red-500/60 block px-2 py-1 absolute top-4 right-4 rounded-full text-xs text-white close cursor-pointer">x</i>
+                            <h2 class="text-5xl font-medium m-2">LOG IN</h2>
+                            <div class="">
+                                <input
+                                    class="w-7/12 sm:w-[280px] mx-2 my-6 mb-0 sm:mx-6 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
+                                    type="text" placeholder="Enter your username or email address">
+                            </div>
+                            <div>
+                                <input
+                                    class="w-7/12 sm:w-[280px] mx-2 my-6 sm:m-6 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
+                                    type="text" placeholder="Enter your password">
+                            </div>
+                            <div class="my-4 lg:my-8">
+                                <p class="text-xs sm:text-sm">
+                                    <i class="font-medium cursor-pointer text-sky-400">
+                                        I forgot my password.
+                                    </i>Remember me
+                                </p>
+                                <div>
+                                    <button class="btn-primary-darkmode">SIGN IN
+                                    </button>
+                                </div>
+                                <p class="text-xs sm:text-sm">You are not registered? <i
+                                        class="text-sky-400 font-medium cursor-pointer">Register</i>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-xs sm:text-sm">No se encuentra registrado? <i
-                            class="text-sky-400 font-medium">Registrate</i>
-                    </p>
                 </div>
             </div>
         </div>
@@ -50,24 +65,26 @@
         <!-- FOOTER RESPONSIVE -->
         <footer class="w-full relative bottom-0">
             <div
-                class="grid grid-cols-12 justify-items-center content-center bg-gradient-to-l from-gray-500 p-4 px-8 dark:bg-gradient-to-t dark:from-ship-purple-footer-2 dark:to-ship-purple-footer-1">
-                <div class="col-start-1 col-end-13 lg:col-end-9 flex flex-col md:flex-row items-center p-4">
-                    <img class="w-[60px] sm:w-[118px]" src="/public/imgs/logo.png" alt="">
-                    <img class="h-8 pl-4 hidden md:inline-block md:w-[561px]" src="/public/imgs/name-logo.png" alt="">
+                class="grid grid-cols-12 justify-items-center content-center bg-gradient-to-l from-gray-500 p-2 px-8 dark:bg-gradient-to-t dark:from-ship-purple-footer-2 dark:to-ship-purple-footer-1">
+                <div class="col-start-1 col-end-13 lg:col-end-8 flex flex-col md:flex-row items-center p-2">
+                    <img class="w-[60px] sm:w-[80px]" src="/public/imgs/logo.png" alt="">
+                    <img class="h-6 pl-4 hidden md:inline-block md:w-[350px]" src="/public/imgs/name-logo.png" alt="">
                 </div>
                 <div
-                    class="col-start-1 col-end-13 lg:col-start-9 lg:col-end-13 text-center text-4xl flex items-center py-4 ">
+                    class="col-start-1 col-end-13 lg:col-start-8 lg:col-end-13 text-center text-4xl flex items-center py-2 ">
                     <i class="mx-2 bi bi-whatsapp"></i>
                     <i class="mx-2 bi bi-facebook"></i>
                     <i class="mx-2 bi bi-instagram"></i>
                     <i class="mx-2 bi bi-github"></i>
                 </div>
             </div>
-            <div class="text-center p-3 bg-gradient-to-r from-gray-500 dark:from-ship-purple-1 dark:to-ship-purple-1">
+            <div
+                class="text-center p-3 bg-gradient-to-r from-gray-500 dark:from-ship-purple-1 dark:to-ship-purple-1 text-xs">
                 Copyright By Design Ship 2022©</div>
         </footer>
     </div>
     <script src="login.js"></script>
+    <script src="/public/formRegister.js"></script>
     <script src="/public/darkmode.js"></script>
 </body>
 
