@@ -5,7 +5,9 @@ module.exports = {
   content: [
     './public/index.html',
     './public/login/login.html',
-    './public/plugins.html'
+    './public/plugins/plugins.html',
+    './public/web-design/card-1.html',
+    './public/web-design/card-2.html'
   ],
   theme: {
     fontFamily: {
@@ -21,4 +23,14 @@ module.exports = {
     },
   },
   plugins: [],
+
+  extend: {
+    dropShadow: {
+      '3xl': '0 35px 35px rgba(0, 0, 0, 0.25)',
+      '4xl': [
+          '3xl 35px 35px rgba(0, 0, 0, 0.25)',
+          '4xl 45px 65px rgba(0, 0, 0, 0.15)'
+      ]
+    }
+  }
 }
