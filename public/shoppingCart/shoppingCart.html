@@ -141,62 +141,32 @@
     <div class="mx-auto w-10/12 mb-8">
         <h1 class="text-5xl pt-4 px-4">Shopping Cart</h1>
         <div class="w-full h-1 bg-gray-300 my-6"></div>
-        <div class="flex justify-between">
-            <div class="border-4 border-gray-300 mx-4 p-4 rounded-2xl w-3/5">
-                <div class="flex justify-between mx-3">
-                    <button class="btn-primary-darkmode m-0">Continue Shopping</button>
-                    <button class="btn-primary-darkmode m-0">Empty Cart</button>
+        <div class="flex justify-between w-full flex-col lg:flex-row">
+            <div class="border-4 border-gray-300 mx-4 mb-4 lg:mb-0 p-4 rounded-2xl w-5/5 lg:w-3/5 sm">
+                <div class="flex justify-between mx-3 flex-col sm:flex-row">
+                    <button class="btn-primary-darkmode my-2 mb-0 lg:m-0">Continue Shopping</button>
+                    <button class="btn-primary-darkmode my-2 lg:m-0">Empty Cart</button>
                 </div>
                 <div class="w-11/12 h-1 bg-gray-300 mx-auto my-5"></div>
                 <!-- PRODUCTOS DEL CARRITO DE COMPRAS -->
                 <div class="grid grid-cols-12 items-center">
-                    <div class="col-span-6 flex">
-                        <img class="border-4 border-gray-300 rounded-xl w-24 h-24 m-2 mt-0"
-                            src="/public/imgs/logo.png" alt="">
-                       <div>
-                         <h2 class="text-xl">Product Name</h2>
-                         <p>by <i class="text-sky-400">Design</i></p>
-                         <p>Licence: regular</p>
-                       </div>
+                    <div class="col-span-12 sm:col-span-6 md:col-span-8 flex">
+                        <img class="border-4 border-gray-300 rounded-xl w-20 h-20 lg:w-24 lg:h-24 m-2 mt-0" src="/public/imgs/logo.png"
+                            alt="">
+                        <div class="text-xs sm:text-lg lg:my-2">
+                            <h2 class="text-base sm:text-xl">Product Name</h2>
+                            <p>by <i class="text-sky-400">Design</i></p>
+                            <p>Licence: regular</p>
+                        </div>
                     </div>
-                    <div class="col-start-10 col-end-12 flex justify-around text-3xl">
-                        <p class="line-through"><i class="text-xs no-underline relative bottom-3">$</i>64</p>
-                        <p class="text-green-500"><i class="text-xs no-underline relative bottom-3">$</i>39</p>
-                    </div>
-                </div>
-                <div class="grid grid-cols-12 items-center">
-                    <div class="col-span-6 flex">
-                        <img class="border-4 border-gray-300 rounded-xl w-24 h-24 m-2 mt-0"
-                            src="/public/imgs/logo.png" alt="">
-                       <div>
-                         <h2 class="text-xl">Product Name</h2>
-                         <p>by <i class="text-sky-400">Design</i></p>
-                         <p>Licence: regular</p>
-                       </div>
-                    </div>
-                    <div class="col-start-10 col-end-12 flex justify-around text-3xl">
-                        <p class="line-through"><i class="text-xs no-underline relative bottom-3">$</i>64</p>
-                        <p class="text-green-500"><i class="text-xs no-underline relative bottom-3">$</i>39</p>
-                    </div>
-                </div>
-                <div class="grid grid-cols-12 items-center">
-                    <div class="col-span-6 flex">
-                        <img class="border-4 border-gray-300 rounded-xl w-24 h-24 m-2 mt-0"
-                            src="/public/imgs/logo.png" alt="">
-                       <div>
-                         <h2 class="text-xl">Product Name</h2>
-                         <p>by <i class="text-sky-400">Design</i></p>
-                         <p>Licence: regular</p>
-                       </div>
-                    </div>
-                    <div class="col-start-10 col-end-12 flex justify-around text-3xl">
+                    <div class="col-start-8 col-end-10 sm:col-start-10 sm:col-end-12 md:col-start-8 md:col-end-12 flex justify-around text-xl sm:text-3xl mb-2 lg:mb-0">
                         <p class="line-through"><i class="text-xs no-underline relative bottom-3">$</i>64</p>
                         <p class="text-green-500"><i class="text-xs no-underline relative bottom-3">$</i>39</p>
                     </div>
                 </div>
             </div>
-            <div class="border-4 border-gray-300 w-2/5 mx-4 p-4 rounded-2xl h-min">
-                <h3 class="text-2xl mx-2">Total Cart</h3>
+            <div class="border-4 border-gray-300 w-5/5 lg:w-2/5 mx-4 p-4 rounded-2xl h-min">
+                <h3 class="text-2xl mx-2 sm:text-4xl">Total Cart</h3>
                 <div class="w-5/6 h-1 bg-gray-300 mx-4 my-6"></div>
                 <div class="text-center">
                     <h2 class="text-green-500 text-4xl"><i class="text-xs no-underline relative bottom-3">$</i>67</h2>
