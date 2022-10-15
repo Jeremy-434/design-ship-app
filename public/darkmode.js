@@ -10,4 +10,4 @@ const darkmode = () => {
     toggleDarkMode.value
         ? (localStorage.theme = "dark")
         : (localStorage.theme = "light");
-}
+} 

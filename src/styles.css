@@ -5,6 +5,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.box {
+	@apply
+		text-gray-700
+		min-w-full
+		h-32
+		min-h-full
+		rounded;
+}
 @layer components {
     .btn-primary-darkmode {
       @apply lg:inline-block lg:ml-auto lg:mr-3 py-2 px-3 bg-gradient-to-r from-emerald-500 to-blue-700 text-sm text-white font-medium rounded-xl transition duration-200 my-4;
@@ -20,6 +28,13 @@
       min-h-full
       rounded;
   }
+.article{
+	-webkit-box-shadow: 10px 10px 29px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 29px -6px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 29px -6px rgba(0,0,0,0.75);
+border-radius: 3em;
+}
+
 
   ul {
     list-style-image: url('/public/IMG/list-icon.svg');

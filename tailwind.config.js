@@ -4,11 +4,12 @@ module.exports = {
   darkMode: 'class',
   content: [
     './public/index.html',
+    './public/plantillasweb/plantillas.html',
     './public/login/login.html',
     './public/plugins/plugins.html',
     './public/web-design/card-1.html',
     './public/web-design/card-2.html'
-  ],
+],
   theme: {
     fontFamily: {
       'fredoka' : ['Fredoka', 'sans-serif']

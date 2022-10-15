@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/build/styles.css">
+    <title>plantillas</title>
+</head>
+
+<body class="font-fredoka bg-white dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300">
+    <!-- inicio Navbar -->
+    <nav class="relative py-4 flex justify-between items-center bg-white dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300 " >
+		<a class="text-2xl font-bold leading-none" href="#">
+			<img src="./image/icons/FIGURALOGO.svg" alt="logo" class="h-16 w-64 pt-2">
+		</a>
+		<div class="lg:hidden ">
+			<button class=" border-teal-500/ navbar-burger flex items-center text-teal-500 ">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
+                  </svg>
+                  
+			</button>
+		</div>
+		<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-12 2xl:space-x-12  ">
+			<li><a class="text-sm dark:text-gray-300 hover:text-teal-500 font-semibold" href="#">HOME</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-sm dark:text-gray-300 hover:text-teal-500 font-semibold" href="#">PLANTILLAS</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+			<li><a class="text-sm dark:text-gray-300 hover:text-teal-500 font-semibold" href="#">PLUGINS</a></li>
+			<li class="text-gray-300">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+				</svg>
+			</li>
+
+            
+            <!-- dark mode button -->
+            <a class="flex items-center hover:text-sky-700 href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 dark:text-gray-300 text-teal-500 hover:text-green-400 dark:hover:text-green-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" onclick="darkmode()">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                </svg>        
+            </a>
+
+            <!-- end dark mode button -->
+
+            <a class="flex items-center hover:text-sky-700 href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 dark:text-gray-300 text-teal-500 hover:text-green-400 dark:hover:text-green-400 lg:mr-24 2xl:ml-96 2xl:mr-36">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
+            </a>
+              
+		</ul>
+		<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 ext-gray-700  border-2 border-neutral-700  hover:border-none  hover:bg-gradient-to-br  from-green-400 to-blue-600 hover:text-white rounded-full dark:border-white dark:hover:bg-gradient-to-br from-green-400 to-blue-600 dark:hover:text-white dark:hover:border-none dark:text-white" href="#">Iniciar Sesion</a>
+		<a class="hidden lg:inline-block py-2 px-6 lg:mr-16 text-gray-700  border-2 border-neutral-700  hover:border-none  hover:bg-gradient-to-br from-green-400 to-blue-600 hover:text-white rounded-full dark:border-white dark:hover:bg-gradient-to-br from-green-400 to-blue-600 dark:hover:text-white dark:hover:border-none dark:text-white" href="#">Registrarme</a>
+	</nav>
+	<div class="navbar-menu relative z-50 hidden  ">
+		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25 "></div>
+		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 border-r overflow-y-auto bg-white dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300">
+			<div class="flex items-center mb-8 ">
+				<a class="mr-auto text-3xl font-bold leading-none" href="#">
+				<img src="./image/icons/FIGURALOGO.svg" alt="logo" class="h-12 w-12">
+				</a>
+				<button class="navbar-close text-gray-500 ">
+					<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+					</svg>
+				</button>
+			</div>
+			<div class="bg-white dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300">
+				<ul >
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300  dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded" href="#">HOME</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300 dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded" href="#">PLANTILLAS WEB</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300 dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded" href="#">PLAGINS</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300 dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded" href="#">SHOP</a>
+					</li>
+					<li class="mb-1">
+						<a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300 dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded" onclick="darkmode()" href="#">COLOR MODE</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mt-auto bg-white dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300">
+				<div class="mt-auto">
+                    <div class="pt-6">
+                        <a class="block px-4 py-3 mb-2 leading-loose text-sm text-center font-regular text-gray-700  border-2 border-neutral-700  hover:border-none  hover:bg-gradient-to-br  from-green-400 to-blue-600 hover:text-white rounded-full dark:border-white dark:hover:bg-gradient-to-br from-green-400 to-blue-600 dark:hover:text-white dark:hover:border-none dark:text-white" href="#">Iniciar Sesion</a>
+                        <a class="block px-4 py-3 mb-2 leading-loose text-sm text-center font-regular text-gray-700  border-2 border-neutral-700  hover:border-none hover:bg-gradient-to-br  from-green-400 to-blue-600 hover:text-white rounded-full dark:border-white dark:hover:bg-gradient-to-br from-green-400 to-blue-600 dark:hover:text-white dark:hover:border-none dark:text-white" href="#">Registrarse</a>
+                </div>
+                <!-- fin navbar -->
+
+                
+				<p class="my-4 text-xs text-center text-gray-400">
+					<span>Copyright ByDesignShip© 2022</span>
+				</p>
+			</div>
+		</nav>
+	</div>
+
+    <div class="grid overflow-hidden grid-lines  grid-cols-6 auto-rows-fr gap-2 grid-flow-row w-full h-auto">
+        <div class="box row-span-2 col-start-1 col-end-7">
+            <div class="flex flex-col justify-center items-center h-full">
+                <h1 class="text-6xl font-medium  text-center dark:text-gray-300 mt-[em]">PLANTILLAS WEB</h1>
+            </div>
+        </div>
+        <div class="box row-span-4 col-start-1 col-end-4">
+            <div class="flex flex-col justify-center items-center h-full lg:ml-80 sm:h-60 sm:w-44 sm:ml-36 md:ml-40 xl:ml-96 xl:h-60 xl:w-80">
+                <img src="./image/icons/ICONWEB.svg" alt="figura1" class="h-52 w-52 mt-[-8em]">
+            </div>
+        </div>
+        <div class="box row-span-4 col-start-4 col-end-7">
+            <div class="flex flex-col justify-center items-center h-52 w-80 lg:ml-10 sm:h-60 sm:w-72 md:ml-14">
+               <p class="text-2xl   text-center dark:text-gray-300 mt-[-6em] ">Plantillas para correos electrónicos, administrativas, páginas de inicio y sitios web.</p>
+            </div>
+        </div>
+        <div class="box row-span-3 col-start-1 col-end-7">
+            <div class="flex flex-col justify-center items-center h-full">
+                <h1 class="text-6xl   text-center font-medium dark:text-gray-300 mt-[-3em]">PLANTILLAS DESIGN SHIP</h1>
+            </div>
+        </div>  
+    </div>
+    
+    
+
+    <!-- inc cards -->
+    <div class="container my-12 mx-auto px-4 md:px-12 mt-[-7em]">
+        <div class="flex flex-wrap -mx-1 lg:-mx-4">
+    
+            <!-- Column -->
+            <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+    
+                <!-- Article1 -->
+                <article class="overflow-hidden rounded-3xl shadow-black shadow-2xl bg-white dark:bg-gray-900 ">
+    
+                    <a href="#">
+                        <img alt="Placeholder" class="block h-auto w-full" src="./image/CARD1.jpg">
+                    </a>
+    
+                    <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                        <h1 class="text-lg">
+                            <a class="no-underline hover:underline text-gray-800 dark:text-gray-300" href="#">
+                                Minimalistic
+                            </a>
+                        </h1>
+                        <p class="text-slate-600 dark:text-gray-300 text-sm">
+                            Version 2.1.3
+                        </p>
+                    </header>
+    
+                    <footer class="flex items-center justify-between leading-none p-2 md:p-4 drop-shadow-xl">
+                        <a class="flex items-center no-underline hover:underline text-gray-800 dark:text-gray-300" href="#">
+                            <img alt="Placeholder" class="block rounded-full h-7 w-7" src="./image/icons/FIGURALOGO.svg">
+                            <p class="ml-2 text-sm ">
+                                By DewsignShip
+                            </p>
+                        </a>
+                        <button type="button" class="text-gray-700  border-2 border-neutral-700  hover:border-none hover:bg-gradient-to-br  from-green-400 to-blue-600 hover:text-white  dark:border-white dark:hover:bg-gradient-to-br from-green-400 to-blue-600 dark:hover:text-white dark:hover:border-none dark:text-white rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2">Ver mas</button>
+                    </footer>
+    
+                </article>
+                <!-- END Article -->
+    
+            </div>
+            <!-- END Column -->
+    
+            <!-- Column -->
+            <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+    
+                <!-- Article2 -->
+                <article class="overflow-hidden rounded-3xl shadow-black shadow-2xl bg-white dark:bg-gray-900 ">
+    
+                    <a href="#">
+                        <img alt="Placeholder" class="block h-auto w-full" src="./image/CARD2.jpg">
+                    </a>
+    
+                    <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                        <h1 class="text-lg">
+                            <a class="no-underline hover:underline text-gray-800 dark:text-gray-300" href="#">
+                                Future
+                            </a>
+                        </h1>
+                        <p class="text-slate-600 dark:text-gray-300 text-sm">
+                            Version 1.1.3
+                        </p>
+                    </header>
+    
+                    <footer class="flex items-center justify-between leading-none p-2 md:p-4 drop-shadow-xl">
+                        <a class="flex items-center no-underline hover:underline text-gray-800 dark:text-gray-300" href="#">
+                            <img alt="Placeholder" class="block rounded-full h-7 w-7" src="../plantillasweb/image/icons/FIGURALOGO.svg">
+                            <p class="ml-2 text-sm ">
+                                By DewsignShip
+                            </p>
+                        </a>
+                        <button type="button" class="text-gray-700  border-2 border-neutral-700  hover:border-none hover:bg-gradient-to-br  from-green-400 to-blue-600 hover:text-white  dark:border-white dark:hover:bg-gradient-to-br from-green-400 to-blue-600 dark:hover:text-white dark:hover:border-none dark:text-white rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2">Ver mas</button>
+                    </footer>
+                </article>
+                <!-- END Article -->
+    
+            </div>
+            <!-- END Column -->
+    
+            <!-- Column -->
+            <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+    
+                <!-- Article3 -->
+                <article class="overflow-hidden rounded-3xl shadow-black shadow-2xl bg-white dark:bg-gray-900 ">
+    
+                    <a href="#">
+                        <img alt="Placeholder" class="block h-auto w-full" src="./image/CARD3.jpg">
+                    </a>
+    
+                    <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                        <h1 class="text-lg">
+                            <a class="no-underline hover:underline text-gray-800 dark:text-gray-300" href="#">
+                                House Rent
+                            </a>
+                        </h1>
+                        <p class="text-slate-600 dark:text-gray-300 text-sm">
+                            Version 3.1.3
+                        </p>
+                    </header>
+    
+                    <footer class="flex items-center justify-between leading-none p-2 md:p-4 drop-shadow-xl">
+                        <a class="flex items-center no-underline hover:underline text-gray-800 dark:text-gray-300" href="#">
+                            <img alt="Placeholder" class="block rounded-full h-7 w-7" src="./image/icons/FIGURALOGO.svg">
+                            <p class="ml-2 text-sm font-Fredoka2">
+                                By Nicolas Zapata
+                            </p>
+                        </a>
+                        <button type="button" class="text-gray-700  border-2 border-neutral-700  hover:border-none hover:bg-gradient-to-br  from-green-400 to-blue-600 hover:text-white  dark:border-white dark:hover:bg-gradient-to-br from-green-400 to-blue-600 dark:hover:text-white dark:hover:border-none dark:text-white rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2">Ver mas</button>                    </footer>
+    
+                </article>
+                <!-- END Article -->
+    
+            </div>
+            <!-- END Column -->
+    
+            <!-- Column -->
+            <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+    
+                <!-- Article4 -->
+                <article class="overflow-hidden rounded-3xl shadow-black shadow-2xl bg-white dark:bg-gray-900 ">
+    
+                    <a href="#">
+                        <img alt="Placeholder" class="block h-auto w-full" src="./image/CARD4.jpg">
+                    </a>
+    
+                    <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                        <h1 class="text-lg">
+                            <a class="no-underline hover:underline text-gray-800 dark:text-gray-300" href="#">
+                                Digital Marketing
+                            </a>
+                        </h1>
+                        <p class="text-slate-600 dark:text-gray-300 text-sm">
+                            Version 4.1.2
+                        </p>
+                    </header>
+    
+                    <footer class="flex items-center justify-between leading-none p-2 md:p-4 drop-shadow-xl">
+                        <a class="flex items-center no-underline hover:underline text-gray-800 dark:text-gray-300" href="#">
+                            <img alt="Placeholder" class="block rounded-full h-7 w-7" src="./image/icons/FIGURALOGO.svg">
+                            <p class="ml-2 text-sm font-Fredoka2">
+                                By Nixon
+                            </p>
+                        </a>
+                        <button type="button" class="text-gray-700  border-2 border-neutral-700  hover:border-none hover:bg-gradient-to-br  from-green-400 to-blue-600 hover:text-white  dark:border-white dark:hover:bg-gradient-to-br from-green-400 to-blue-600 dark:hover:text-white dark:hover:border-none dark:text-white rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2">Ver mas</button>                    </footer>
+    
+                </article>
+                <!-- END Article -->
+    
+            </div>
+            <!-- END Column -->
+    
+            <!-- Column -->
+            <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+    
+                <!-- Article5 -->
+                <article class="overflow-hidden rounded-3xl shadow-black shadow-2xl bg-white dark:bg-gray-900 ">
+    
+                    <a href="#">
+                        <img alt="Placeholder" class="block h-auto w-full" src="./image/CARD5.jpg">
+                    </a>
+    
+                    <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                        <h1 class="text-lg">
+                            < <a class="no-underline hover:underline text-gray-800 dark:text-gray-300" href="#">
+                                Unique
+                            </a>
+                        </h1>
+                        <p class="text-slate-600 dark:text-gray-300 text-sm">
+                            Version 2.1.3
+                        </p>
+                    </header>
+    
+                    <footer class="flex items-center justify-between leading-none p-2 md:p-4 drop-shadow-xl">
+                        <a class="flex items-center no-underline hover:underline text-gray-800 dark:text-gray-300" href="#">
+                            <img alt="Placeholder" class="block rounded-full h-7 w-7" src="./image/icons/FIGURALOGO.svg">
+                            <p class="ml-2 text-sm font-Fredoka2">
+                                By DewsignShip
+                            </p>
+                        </a>
+                        <button type="button" class="text-gray-700  border-2 border-neutral-700  hover:border-none hover:bg-gradient-to-br  from-green-400 to-blue-600 hover:text-white  dark:border-white dark:hover:bg-gradient-to-br from-green-400 to-blue-600 dark:hover:text-white dark:hover:border-none dark:text-white rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2">Ver mas</button>                    </footer>
+    
+                </article>
+                <!-- END Article -->
+    
+            </div>
+            <!-- END Column -->
+    
+            <!-- Column -->
+            <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
+    
+                <!-- Article6 -->
+                <article class="overflow-hidden rounded-3xl shadow-black shadow-2xl bg-white dark:bg-gray-900 ">
+    
+                    <a href="#">
+                        <img alt="Placeholder" class="block h-auto w-full" src="./image/CARD6.jpg">
+                    </a>
+    
+                    <header class="flex items-center justify-between leading-tight p-2 md:p-4">
+                        <h1 class="text-lg">
+                            <a class="no-underline hover:underline text-gray-800 dark:text-gray-300" href="#">
+                                Portfolio
+                            </a>
+                        </h1>
+                        <p class="text-slate-600 dark:text-gray-300 text-sm">
+                            Version 1.1.1
+                        </p>
+                    </header>
+    
+                    <footer class="flex items-center justify-between leading-none p-2 md:p-4 drop-shadow-xl">
+                        <a class="flex items-center no-underline hover:underline text-gray-800 dark:text-gray-300" href="#">
+                            <img alt="Placeholder" class="block rounded-full h-7 w-7" src="./image/icons/FIGURALOGO.svg">
+                            <p class="ml-2 text-sm font-Fredoka2">
+                                By DewsignShip
+                            </p>
+                        </a>
+                        <button type="button" class="text-gray-700  border-2 border-neutral-700  hover:border-none hover:bg-gradient-to-br  from-green-400 to-blue-600 hover:text-white  dark:border-white dark:hover:bg-gradient-to-br from-green-400 to-blue-600 dark:hover:text-white dark:hover:border-none dark:text-white rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2">Ver mas</button>                    </footer>
+    
+                </article>
+                <!-- END Article -->
+    
+            </div>
+            <!-- END Column -->
+    
+        </div>
+    </div>
+      <!-- FOOTER RESPONSIVE -->
+      <footer class="w-full relative bottom-0">
+        <div
+            class="grid grid-cols-12 justify-items-center content-center bg-gradient-to-l from-gray-500 p-4 px-8 dark:bg-gradient-to-t dark:from-ship-purple-footer-2 dark:to-ship-purple-footer-1">
+            <div class="col-start-1 col-end-13 lg:col-end-9 flex flex-col md:flex-row items-center p-4">
+                <img class="w-[60px] sm:w-[118px]" src="/public/imgs/logo.png" alt="">
+                <img class="h-8 pl-4 hidden md:inline-block md:w-[561px]" src="/public/imgs/name-logo.png" alt="">
+            </div>
+            <div
+                class="col-start-1 col-end-13 lg:col-start-9 lg:col-end-13 text-center text-4xl flex items-center py-4 ">
+                <i class="mx-2 bi bi-whatsapp"></i>
+                <i class="mx-2 bi bi-facebook"></i>
+                <i class="mx-2 bi bi-instagram"></i>
+                <i class="mx-2 bi bi-github"></i>
+            </div>
+        </div>
+        <div class="text-center p-3 bg-gradient-to-r from-gray-500 dark:from-ship-purple-1 dark:to-ship-purple-1">
+            Copyright By Design Ship 2022©</div>
+    </footer>
+    <script src="../darkmode.js"></script>
+   <script src="././plantillas.js"></script>
+</body>
+</html>
