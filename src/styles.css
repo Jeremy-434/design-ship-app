@@ -21,8 +21,7 @@
   
   .box {
     @apply
-      bg-indigo-700
-      text-gray-100
+      text-gray-700
       min-w-full
       h-32
       min-h-full
