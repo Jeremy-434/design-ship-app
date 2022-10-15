@@ -7,7 +7,6 @@
 
 .box {
 	@apply
-		bg-sky-700
 		text-gray-700
 		min-w-full
 		h-32
