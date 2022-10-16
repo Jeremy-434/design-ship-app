@@ -9,6 +9,7 @@ module.exports = {
     './public/shoppingCart/shoppingCart.html',
     './public/usuarioPerfil/usuarioPerfil.html'
   ],
+  
   theme: {
     fontFamily: {
       'fredoka' : ['Fredoka', 'sans-serif']
