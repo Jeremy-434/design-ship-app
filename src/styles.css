@@ -8,11 +8,13 @@
 .box {
 	@apply
 		text-gray-700
+		/* bg-lime-500 */
 		min-w-full
 		h-32
 		min-h-full
-		rounded;
 }
+
+
 @layer components {
     .btn-primary-darkmode {
       @apply lg:inline-block lg:ml-auto lg:mr-3 py-2 px-3 bg-gradient-to-r from-emerald-500 to-blue-700 text-sm text-white font-medium rounded-xl transition duration-200 my-4;
