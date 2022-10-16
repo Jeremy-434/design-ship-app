@@ -5,6 +5,7 @@ module.exports = {
     './public/index.html',
     './public/plantillasweb/plantillas.html',
     './public/login/login.html'
+    
 ],
   theme: {
     fontFamily: {
