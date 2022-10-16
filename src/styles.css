@@ -33,8 +33,3 @@
 box-shadow: 10px 10px 29px -6px rgba(0,0,0,0.75);
 border-radius: 3em;
 }
-
-
-  ul {
-    list-style-image: url('/public/IMG/list-icon.svg');
-  }
