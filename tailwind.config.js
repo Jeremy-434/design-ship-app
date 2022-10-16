@@ -3,9 +3,7 @@ module.exports = {
   darkMode: 'class',
   content: [
     './public/index.html',
-    './public/login/login.html',
-    './public/plantillasweb/plantillas.html',
-    './public/register/register.html'
+    './public/forms-LogIn-Register.js'
   ],
   theme: {
     fontFamily: {
