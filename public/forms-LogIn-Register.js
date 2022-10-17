@@ -1,78 +1,129 @@
 
-const showRegister = () => {
-  const divRegister = document.getElementById('divRegister');
 
-  divRegister.innerHTML = `<!-- FORMULARIO DE REGISTRO -->
-  <div
-      class="modal-containerRegster modalRegster overflow-y-auto overflow-x-auto fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full flex justify-center items-center bg-black/50">
-      <div class="relative p-4 w-full max-w-md h-full md:h-auto">
-          <!-- Modal content -->
-          <div
-              class="relative bg-gray-100 rounded-lg shadow-2xl dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300 py-6">
-              <div class="text-center flex flex-col justify-center self-center">
-                  <i
-                      class="bg-red-500/60 block px-2 py-1 absolute top-4 right-4 rounded-full text-xs text-white closeRegster cursor-pointer">x</i>
-                  <h2 class="text-5xl font-medium m-2">REGISTER</h2>
-                  <form class="form" method="POST" id="">
-                      <div>
-                          <div class="flex w-7/12 mx-auto flex-col sm:w-[280px] sm:flex-row">
-                              <input
-                                  class="border-0 w-full sm:w-[130px] my-4 mb-0 sm:mx-1 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
-                                  type="text" placeholder="First Name" id="firstNameFormRegister">
-                              <input
-                                  class="border-0 w-full sm:w-[130px] my-4 mb-0 sm:mx-1 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
-                                  type="text" placeholder="Last Name" id="lastNameFormRegister">
-                          </div>
-                      </div>
-                      <div>
-                          <input
-                              class="border-0 w-7/12 sm:w-[280px] mx-2 my-4 sm:mx-1 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
-                              type="text" placeholder="E-Mail" id="emailFormRegister">
-                      </div>
-                      <div>
-                          <input
-                              class="border-0 w-7/12 sm:w-[280px] mx-2 my-4 sm:mx-1 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
-                              type="text" placeholder="Username" id="userNameFormRegister">
-                      </div>
-                      <div>
-                          <input
-                              class="border-0 w-7/12 sm:w-[280px] mx-2 my-4 sm:mx-1 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
-                              type="text" placeholder="Password" id="passwordFormRegister">
-                      </div>
-                      <div class="my-4 lg:my-8">
-                          <p class="text-xs sm:text-sm">
-                              <i class="font-medium cursor-pointer text-sky-400">
-                      
-                              </i>
-                          </p>
-                          <div>
-                              <button class="btn-primary-darkmode" onclick="validateEntries()">REGISTER
-                              </button>
-                          </div>
-                          <p class="text-xs sm:text-sm">Already have an Design Ship Account? <i
-                                  class="text-sky-400 font-medium cursor-pointer">Sign in here.</i>
-                          </p>
-                      </div>
-                  </form>
-              </div>
-          </div>
-      </div>
-  </div>`
-  let cerrar = document.querySelectorAll(".closeRegster")[0];
-  let modal = document.querySelectorAll(".modalRegster")[0];
-  let modalC = document.querySelectorAll(".modal-containerRegster")[0];
-  cerrar.addEventListener("click", function () {
-    console.log('asd')
-    modal.classList.toggle("hidden");
-    modalC.style.opacity = "1";
-    modalC.style.visibility = "visible";
-  })
+const showRegister = () => {
+    const divRegister = document.getElementById('divRegister');
+
+    divRegister.innerHTML = `<!-- FORMULARIO DE REGISTRO -->
+    <div
+        class="modal-containerRegster modalRegster overflow-y-auto overflow-x-auto fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full flex justify-center items-center bg-black/50">
+        <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+            <!-- Modal content -->
+            <div
+                class="relative bg-gray-100 rounded-lg shadow-2xl dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300 py-6">
+                <div class="text-center flex flex-col justify-center self-center">
+                    <i
+                        class="bg-red-500/60 block px-2 py-1 absolute top-4 right-4 rounded-full text-xs text-white closeRegster cursor-pointer">x</i>
+                    <h2 class="text-5xl font-medium m-2">REGISTER</h2>
+                    <form method="" id="form">
+                        <div>
+                            <div class="flex w-7/12 mx-auto flex-col sm:w-[280px] sm:flex-row">
+                                <input
+                                    class="border-0 w-full sm:w-[130px] my-4 mb-1 sm:mx-1 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
+                                    type="text" placeholder="First Name" id="firstNameFormRegister">
+
+                                <input
+                                    class="border-0 w-full sm:w-[130px] my-4 mb-1 sm:mx-1 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
+                                    type="text" placeholder="Last Name" id="lastNameFormRegister">
+                            </div>
+                            <div id="warningFirstName" class="text-rose-500 text-xs"></div>
+                            <div id="warningLastName" class="text-rose-500 text-xs"></div>
+                        </div>
+                        <div>
+                            <input
+                                class="border-0 w-7/12 sm:w-[280px] mx-2 my-4 mb-1 sm:mx-1 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
+                                type="text" placeholder="E-Mail" id="emailFormRegister">
+                                <div id="warningEmail" class="text-rose-500 text-xs"></div>
+                        </div>
+                        <div>
+                            <input
+                                class="border-0 w-7/12 sm:w-[280px] mx-2 my-4 mb-1 sm:mx-1 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
+                                type="text" placeholder="Username" id="userNameFormRegister">
+                                <div id="warningUserName" class="text-rose-500 text-xs"></div>
+                        </div>
+                        <div>
+                            <input
+                                class="border-0 w-7/12 sm:w-[280px] mx-2 my-4 mb-1 sm:mx-1 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
+                                type="text" placeholder="Password" id="passwordFormRegister">
+                                <div id="warningPassword" class="text-rose-500 text-xs"></div>
+                        </div>
+                        <div class="my-4 lg:my-8">
+                            <p class="text-xs sm:text-sm">
+                                <i class="font-medium cursor-pointer text-sky-400">
+
+                                </i>
+                            </p>
+                            <div>
+                                <input type="submit" class="btn-primary-darkmode cursor-pointer" value="Register">
+                                </input>
+                            </div>
+                            <p class="text-xs sm:text-sm">Already have an Design Ship Account? <i
+                                    class="text-sky-400 font-medium cursor-pointer">Sign in here.</i>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>`;
+    let cerrar = document.querySelectorAll(".closeRegster")[0];
+    let modal = document.querySelectorAll(".modalRegster")[0];
+    let modalC = document.querySelectorAll(".modal-containerRegster")[0];
+    cerrar.addEventListener("click", function () {
+        console.log('asd')
+        modal.classList.toggle("hidden");
+        modalC.style.opacity = "1";
+        modalC.style.visibility = "visible";
+    });
+
+    // VALIDACIONES DEL FORMULARIO
+    const form = document.querySelector("#form");
+    const firstNameFormRegister = document.querySelector("#firstNameFormRegister");
+    const lastNameFormRegister = document.querySelector("#lastNameFormRegister");
+    const emailFormRegister = document.querySelector("#emailFormRegister");
+    const userNameFormRegister = document.querySelector("#userNameFormRegister");
+    const passwordFormRegister = document.querySelector("#passwordFormRegister");
+    const warningFirstName = document.querySelector("#warningFirstName");
+    const warningLastName = document.querySelector("#warningLastName");
+    const warningEmail = document.querySelector("#warningEmail");
+    const warningUserName = document.querySelector("#warningUserName");
+    const warningPassword = document.querySelector("#warningPassword");
+
+    form.addEventListener("submit", event => {
+        event.preventDefault();
+        let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
+        if (firstNameFormRegister.value.length < 6) {
+            warningFirstName.innerHTML = "Please enter a valid first name.";
+        } else {
+            warningFirstName.innerHTML = "";
+        }
+        if (lastNameFormRegister.value.length < 6) {
+            warningLastName.innerHTML = "Please enter a valid last name";
+        } else {
+            warningLastName.innerHTML = "";
+        }
+        if (!regexEmail.test(emailFormRegister.value)) {
+            warningEmail.innerHTML = "Please enter a valid email";
+        } else {
+            warningEmail.innerHTML = "";
+        }
+        if (userNameFormRegister.value.length < 6) {
+            warningUserName.innerHTML = "Please enter a valid user name";
+        } else {
+            warningUserName.innerHTML = "";
+        }
+        if (passwordFormRegister.value.length < 8) {
+            warningPassword.innerHTML = "Please enter a valid password";
+        } else {
+            warningPassword.innerHTML = "";
+        }
+    });
 }
 
 const showLogin = () => {
-  const divLogin = document.getElementById('divLogin');
+    const divLogin = document.getElementById('divLogin');
 
-  divLogin.innerHTML = `<!-- FORMULARIO DE INGRESO -->
+    divLogin.innerHTML = `<!-- FORMULARIO DE INGRESO -->
   <div
       class="modal-container modal overflow-y-auto overflow-x-auto fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full flex justify-center items-center bg-black/50">
       <div class="relative p-4 w-full max-w-md h-full md:h-auto">
@@ -111,17 +162,29 @@ const showLogin = () => {
           </div>
       </div>
   </div>`
-  let cerrar = document.querySelectorAll(".closeLogin")[0];
-  let modal = document.querySelectorAll(".modal")[0];
-  let modalC = document.querySelectorAll(".modal-container")[0];
-  cerrar.addEventListener("click", function () {
-    console.log('asd')
-    modal.classList.toggle("hidden");
-    modalC.style.opacity = "1";
-    modalC.style.visibility = "visible";
-  })
+    let cerrar = document.querySelectorAll(".closeLogin")[0];
+    let modal = document.querySelectorAll(".modal")[0];
+    let modalC = document.querySelectorAll(".modal-container")[0];
+    cerrar.addEventListener("click", function () {
+        console.log('asd')
+        modal.classList.toggle("hidden");
+        modalC.style.opacity = "1";
+        modalC.style.visibility = "visible";
+    })
 }
 
+// export const shows = {
+//     showLogin,
+//     showRegister
+// }
+
+
+
+
+
+
+
+// PRIMEROS MODALES CON CLASES, NO USADOS PORQUE GENERARN MUCHO CODIGO
 
 // // Modal Log In
 // let abrirLogin = document.querySelectorAll(".ctaLogin")[0];
