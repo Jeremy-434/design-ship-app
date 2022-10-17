@@ -14,7 +14,7 @@ const showRegister = () => {
                     <i
                         class="bg-red-500/60 block px-2 py-1 absolute top-4 right-4 rounded-full text-xs text-white closeRegster cursor-pointer">x</i>
                     <h2 class="text-5xl font-medium m-2">REGISTER</h2>
-                    <form method="" id="form">
+                    <form method="POST" id="form">
                         <div>
                             <div class="flex w-7/12 mx-auto flex-col sm:w-[280px] sm:flex-row">
                                 <input
@@ -103,7 +103,7 @@ const showRegister = () => {
             warningLastName.innerHTML = "";
         }
         if (!regexEmail.test(emailFormRegister.value)) {
-            warningEmail.innerHTML = "Please enter a valid email";
+            warningEmail.innerHTML = "Please enter a valid email address";
         } else {
             warningEmail.innerHTML = "";
         }
@@ -124,44 +124,48 @@ const showLogin = () => {
     const divLogin = document.getElementById('divLogin');
 
     divLogin.innerHTML = `<!-- FORMULARIO DE INGRESO -->
-  <div
-      class="modal-container modal overflow-y-auto overflow-x-auto fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full flex justify-center items-center bg-black/50">
-      <div class="relative p-4 w-full max-w-md h-full md:h-auto">
-          <!-- Modal content -->
-          <div
-              class="relative bg-gray-100 rounded-lg shadow-2xl dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300 py-6">
-              <div class="my-8">
-                  <div class="text-center flex flex-col justify-center self-center">
-                      <i
-                          class="bg-red-500/60 block px-2 py-1 absolute top-4 right-4 rounded-full text-xs text-white closeLogin cursor-pointer">x</i>
-                      <h2 class="text-5xl font-medium m-2">LOG IN</h2>
-                      <div>
-                          <input
-                              class="w-7/12 sm:w-[280px] mx-2 my-6 mb-0 sm:mx-6 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
-                              type="text" placeholder="Enter your username or email address" required>
-                      </div>
-                      <div>
-                          <input
-                              class="w-7/12 sm:w-[280px] mx-2 my-6 sm:m-6 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
-                              type="password" placeholder="Enter your password" required>
-                      </div>
-                      <div class="my-4 lg:my-8">
-                          <p class="text-xs sm:text-sm">
-                              <i class="font-medium cursor-pointer text-sky-400">
-                                  I forgot my password.
-                              </i>Remember me
-                          </p>
-                          <button type="submit" class="btn-primary-darkmode">SIGN IN
-                          </button>
-                          <p class="text-xs sm:text-sm">You are not registered? <i
-                                  class="text-sky-400 font-medium cursor-pointer">Register</i>
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>`
+    <div
+        class="modal-container modal overflow-y-auto overflow-x-auto fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full flex justify-center items-center bg-black/50">
+        <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+            <!-- Modal content -->
+            <div
+                class="relative bg-gray-100 rounded-lg shadow-2xl dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300 py-6">
+                <div class="my-8">
+                    <div class="text-center flex flex-col justify-center self-center">
+                        <i
+                            class="bg-red-500/60 block px-2 py-1 absolute top-4 right-4 rounded-full text-xs text-white closeLogin cursor-pointer">x</i>
+                        <h2 class="text-5xl font-medium m-2">LOG IN</h2>
+                        <form id="formLogin" method="">
+                            <div>
+                                <input
+                                    class="w-7/12 sm:w-[280px] mx-2 my-6 mb-1 sm:mx-6 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
+                                    type="text" placeholder="Enter your username or email address" id="emailFormLogin">
+                                <div id="warningEmailLogin" class="text-rose-500 text-xs"></div>
+                            </div>
+                            <div>
+                                <input
+                                    class="w-7/12 sm:w-[280px] mx-2 my-6 mb-1 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
+                                    type="password" placeholder="Enter your password" id="passwordFormLogin">
+                                <div id="warningPasswordLogin" class="text-rose-500 text-xs"></div>
+                            </div>
+                            <div class="my-4 lg:my-8">
+                                <p class="text-xs sm:text-sm">
+                                    <i class="font-medium cursor-pointer text-sky-400">
+                                        I forgot my password.
+                                    </i>Remember me
+                                </p>
+                                <button type="submit" class="btn-primary-darkmode">SIGN IN
+                                </button>
+                                <p class="text-xs sm:text-sm">You are not registered? <i
+                                        class="text-sky-400 font-medium cursor-pointer">Register</i>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>`
     let cerrar = document.querySelectorAll(".closeLogin")[0];
     let modal = document.querySelectorAll(".modal")[0];
     let modalC = document.querySelectorAll(".modal-container")[0];
@@ -170,7 +174,30 @@ const showLogin = () => {
         modal.classList.toggle("hidden");
         modalC.style.opacity = "1";
         modalC.style.visibility = "visible";
-    })
+    });
+
+    const form = document.querySelector("#formLogin");
+    const emailFormLogin = document.querySelector("#emailFormLogin");
+    const passwordFormLogin = document.querySelector("#passwordFormLogin");
+    const warningEmail = document.querySelector("#warningEmailLogin");
+    const warningPassword = document.querySelector("#warningPasswordLogin");
+
+    form.addEventListener("submit", event => {
+        event.preventDefault();
+        let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
+        if (!regexEmail.test(emailFormLogin.value)) {
+            warningEmail.innerHTML = "Please enter a valid email address";
+        }else{
+            warningEmail.innerHTML = "";
+        }
+        if (passwordFormLogin.value.length < 8) {
+            warningPassword.innerHTML = "Please enter a valid password";
+        }else{
+            warningPassword.innerHTML = "";
+        }
+    });
+
 }
 
 // export const shows = {
