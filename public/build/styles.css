@@ -1897,6 +1897,10 @@ video {
     width: 270px;
   }
 
+  .sm\:w-\[80px\]{
+    width: 80px;
+  }
+
   .sm\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -1928,6 +1932,10 @@ video {
     width: 50%;
   }
 
+  .md\:w-\[350px\]{
+    width: 350px;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1955,12 +1963,20 @@ video {
     grid-column-start: 9;
   }
 
+  .lg\:col-start-8{
+    grid-column-start: 8;
+  }
+
   .lg\:col-end-9{
     grid-column-end: 9;
   }
 
   .lg\:col-end-13{
     grid-column-end: 13;
+  }
+
+  .lg\:col-end-8{
+    grid-column-end: 8;
   }
 
   .lg\:mx-auto{
