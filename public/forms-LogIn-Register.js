@@ -135,7 +135,7 @@ const showLogin = () => {
                         <i
                             class="bg-red-500/60 block px-2 py-1 absolute top-4 right-4 rounded-full text-xs text-white closeLogin cursor-pointer">x</i>
                         <h2 class="text-5xl font-medium m-2">LOG IN</h2>
-                        <form id="formLogin" method="">
+                        <form id="formLogin" method="POST">
                             <div>
                                 <input
                                     class="w-7/12 sm:w-[280px] mx-2 my-6 mb-1 sm:mx-6 p-2 border-b-2 bg-transparent border-b-black dark:border-b-sky-400 focus:bg-gradient-to-t focus:from-gray-200 focus:outline-none dark:focus:bg-gradient-to-t dark:focus:from-sky-400/30"
