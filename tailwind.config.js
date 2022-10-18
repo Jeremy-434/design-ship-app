@@ -4,9 +4,11 @@ module.exports = {
   content: [
     './public/index.html',
     './public/plantillasweb/plantillas.html',
-    './public/login/login.html'
-    
+    './public/login/login.html',
+    './public/forms-LogIn-Register.js'
 ],
+    
+  
   theme: {
     fontFamily: {
       'fredoka' : ['Fredoka', 'sans-serif']

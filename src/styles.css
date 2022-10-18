@@ -14,11 +14,30 @@
 		min-h-full
 }
 
+/* ESTILOS GLOBALES COMO FAMILIA DE LETRA, FONDO Y COLOR LETRA DEL DARKMODE */
+*{
+	/* NATIVO */
+	font-family: Fredoka, sans-serif;
+}
+body {
+	/* TAILWIND */
+	@apply dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300;
+}
 
 @layer components {
+	/* REGISTER LOG-IN AND REGISTER */
     .btn-primary-darkmode {
       @apply lg:inline-block lg:ml-auto lg:mr-3 py-2 px-3 bg-gradient-to-r from-emerald-500 to-blue-700 text-sm text-white font-medium rounded-xl transition duration-200 my-4;
     }
+	.box {
+		@apply
+			bg-indigo-700
+			text-gray-100
+			min-w-full
+			h-32
+			min-h-full
+			rounded;
+	}
   }
 
 .article{
