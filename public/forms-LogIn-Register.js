@@ -154,7 +154,7 @@ const showRegister = () => {
       localStorage.password = passwordFormRegister.value;
       localStorage.email = emailFormRegister.value;
       enterUser.innerHTML = "¡BIENVENIDO!"
-      setTimeout(() => { 
+      setTimeout(() => {
       modal.classList.toggle("hidden")
       loadUser() }, 1000)
     }
@@ -250,7 +250,7 @@ const showLogin = () => {
       localStorage.email = emailFormLogin.value;
       enterUser.innerHTML = "¡BIENVENIDO!"
       setTimeout(() => {
-      modal.classList.toggle("hidden") 
+      modal.classList.toggle("hidden")
       loadUser()
     }, 1000)
     }
