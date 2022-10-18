@@ -7,7 +7,8 @@ module.exports = {
     './public/plantillasweb/plantillas.html',
     './public/register/register.html',
     './public/shoppingCart/shoppingCart.html',
-    './public/dashBoard/dashBoard.html'
+    './public/dashBoard/dashBoard.html',
+    './public/dashBoard/dashborad-admin.html'
   ],
   theme: {
     fontFamily: {
