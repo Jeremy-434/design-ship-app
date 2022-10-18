@@ -5,7 +5,9 @@ module.exports = {
     './public/index.html',
     './public/plantillasweb/plantillas.html',
     './public/login/login.html',
-    './public/forms-LogIn-Register.js'
+    './public/forms-LogIn-Register.js',
+    './public/shoppingCart/shoppingCart.html',
+
 ],
     
   

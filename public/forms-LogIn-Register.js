@@ -1,4 +1,3 @@
-
 // FUNCION PARA CARGAR EL USUARIO EN EL NAVBAR
 const printUserInNavbar = document.querySelector("#userNavbar");
 const loadUser = () => {
@@ -326,4 +325,4 @@ const showLogin = () => {
 //   modalcRegister.style.opacity = "1";
 //   modalcRegister.style.visibility = "visible";
 
-// })
+// })
