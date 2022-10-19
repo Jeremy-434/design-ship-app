@@ -128,33 +128,27 @@
                 </div>
                 <div class="w-11/12 h-1 bg-gray-300 mx-auto my-5"></div>
                 <!-- PRODUCTOS DEL CARRITO DE COMPRAS -->
-                <div class="grid grid-cols-12 items-center">
-                    <div class="col-span-12 sm:col-span-6 md:col-span-8 flex">
-                        <img class="border-4 border-gray-300 rounded-xl w-20 h-20 lg:w-24 lg:h-24 m-2 mt-0" src="/public/imgs/logo.png"
-                            alt="">
-                        <div class="text-xs sm:text-lg lg:my-2">
-                            <h2 class="text-base sm:text-xl">Product Name</h2>
-                            <p>by <i class="text-sky-400">Design</i></p>
-                            <p>Licence: regular</p>
-                        </div>
-                    </div>
-                    <div class="col-start-8 col-end-10 sm:col-start-10 sm:col-end-12 md:col-start-8 md:col-end-12 flex justify-around text-xl sm:text-3xl mb-2 lg:mb-0">
-                        <p class="line-through"><i class="text-xs no-underline relative bottom-3">$</i>64</p>
-                        <p class="text-green-500"><i class="text-xs no-underline relative bottom-3">$</i>39</p>
-                    </div>
-                </div>
+                <div id="productos"></div>
             </div>
             <div class="border-4 border-gray-300 w-5/5 lg:w-2/5 mx-4 p-4 rounded-2xl h-min">
                 <h3 class="text-2xl mx-2 sm:text-4xl">Total Cart</h3>
                 <div class="w-5/6 h-1 bg-gray-300 mx-4 my-6"></div>
                 <div class="text-center">
-                    <h2 class="text-green-500 text-4xl"><i class="text-xs no-underline relative bottom-3">$</i>67</h2>
+                    <h2 class="text-green-500 text-4xl"><i class="text-xs no-underline relative bottom-3">$</i><i id="totalPrice"></i></h2>
                     <p>Total savings: $12</p>
                     <button class="btn-primary-darkmode">Buy</button>
                 </div>
             </div>
         </div>
     </div>
+    <!-- FIN SHOPPING CART -->
+    <!-- button generar factura -->
+    <div class="flex justify-center">
+        <button class="btn-primary-darkmode" onclick="generarFactura()">Generar Factura</button>
+    </div>
+    <!-- fin button generar factura -->
+    <input type="color" class="ml-72" id="exampleColorInput" value=""
+                    title="Choose your color">
    <!-- FOOTER RESPONSIVE -->
 <footer class="w-full relative bottom-0">
     <div
@@ -180,6 +174,9 @@
     <script src="/public/darkmode.js"></script>
     <script src="../forms-LogIn-Register.js"></script>
     <script src="../plantillasweb/plantillas.js"></script>
+    <!-- <script src="pdf.js"></script> -->
+    <script src="../fetch.js"></script>
+   <script src="public\jsPDF-1.3.2\dist\jspdf.min.js"></script>
 </body>
 
 </html>
