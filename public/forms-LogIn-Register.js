@@ -39,7 +39,7 @@ logOut.addEventListener("click", () => {
   loginNavbarHorizontal.classList.remove("lg:hidden");
   registerNavbarHorizontal.classList.remove("lg:hidden");
   logOut.classList.add("hidden");
-  open("../index.html", "_self");
+  open("C:\Users\mafni\OneDrive\Escritorio\design-ship-app\public\index.html", "_self");
 });
 
 // FUNCION PARA CARGAR EL MODAL DEL FORMULARIO DE REGISTRO
