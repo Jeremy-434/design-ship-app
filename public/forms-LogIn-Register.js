@@ -1,24 +1,45 @@
+
+
 // FUNCION PARA CARGAR EL USUARIO EN EL NAVBAR
 const printUserInNavbar = document.querySelector("#userNavbar");
+const loginNavbarHorizontal = document.querySelector("#loginNavbarHorizontal");
+const registerNavbarHorizontal = document.querySelector("#registerNavbarHorizontal");
+const logOut = document.querySelector("#logOut");
+console.log(registerNavbarHorizontal);
 const loadUser = () => {
   if (localStorage.email != "") {
     console.log("noundefined");
     printUserInNavbar.classList.remove("hidden");
+    logOut.classList.remove("hidden");
+    loginNavbarHorizontal.classList.add("hidden");
+    registerNavbarHorizontal.classList.add("hidden");
+    loginNavbarHorizontal.classList.add("lg:hidden");
+    registerNavbarHorizontal.classList.add("lg:hidden");
   } else {
     console.log("undefined");
     printUserInNavbar.classList.add("hidden");
+    logOut.classList.add("hidden");
+    loginNavbarHorizontal.classList.remove("hidden");
+    registerNavbarHorizontal.classList.remove("hidden");
+    loginNavbarHorizontal.classList.remove("lg:hidden");
+    registerNavbarHorizontal.classList.remove("lg:hidden");
   }
 }
 loadUser();
 
 // BOTON PARA DESLOGUEARSE
-const logOut = document.querySelector("#logOut");
 logOut.addEventListener("click", () => {
   localStorage.name = "";
   localStorage.user = "";
   localStorage.password = "";
   localStorage.email = "";
   printUserInNavbar.classList.add("hidden");
+  loginNavbarHorizontal.classList.remove("hidden");
+  registerNavbarHorizontal.classList.remove("hidden");
+  loginNavbarHorizontal.classList.remove("lg:hidden");
+  registerNavbarHorizontal.classList.remove("lg:hidden");
+  logOut.classList.add("hidden");
+  open("../index.html", "_self");
 });
 
 // FUNCION PARA CARGAR EL MODAL DEL FORMULARIO DE REGISTRO
@@ -154,8 +175,9 @@ const showRegister = () => {
       localStorage.email = emailFormRegister.value;
       enterUser.innerHTML = "¡BIENVENIDO!"
       setTimeout(() => {
-      modal.classList.toggle("hidden")
-      loadUser() }, 1000)
+        modal.classList.toggle("hidden")
+        loadUser()
+      }, 1000)
     }
 
   });
@@ -249,9 +271,9 @@ const showLogin = () => {
       localStorage.email = emailFormLogin.value;
       enterUser.innerHTML = "¡BIENVENIDO!"
       setTimeout(() => {
-      modal.classList.toggle("hidden")
-      loadUser()
-    }, 1000)
+        modal.classList.toggle("hidden")
+        loadUser()
+      }, 1000)
     }
   });
 

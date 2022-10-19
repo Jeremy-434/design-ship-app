@@ -7,6 +7,8 @@ module.exports = {
     './public/login/login.html',
     './public/forms-LogIn-Register.js',
     './public/shoppingCart/shoppingCart.html',
+    './public/userProfile/userProfile.html',
+    './public/fetch.js',
     './public/plantillasweb/card-1.html',
     './public/plantillasweb/card-2.html',
     './public/plantillasweb/card-3.html',
@@ -19,6 +21,8 @@ module.exports = {
     './public/plantillasweb/plugin-4.html',
     './public/plantillasweb/plugin-5.html',
     './public/plantillasweb/plugin-6.html',
+    './public/userProfile/Dashboard.html',
+    './public/userProfile/userProfile.html',
 ],
     
   

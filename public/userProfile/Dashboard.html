@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/build/styles.css">
     <link rel="icon" type="image/x-icon" href="/public/imgs/logo.png">
-    <script src="https://cdn.plot.ly/plotly-2.14.0.min.js"></script>
-    <title>ShoppingCart</title>
+    <link rel="stylesheet" href="/public/build/styles.css">
+    <link rel="shortcut icon" href="/public/plantillasweb/image/icons/FIGURALOGO.svg" type="image/x-icon">
+    <title>Dashboard</title>
 </head>
 
-<body>
+<body
+    class="font-fredoka bg-white dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300">
 
     <!-- inicio Navbar -->
     <div>
@@ -63,7 +64,7 @@
                 <!-- dark mode button -->
                 <a class="flex items-center hover:text-sky-700 href=" #">
                     <svg xmlns="http://www.w3.org/2000/svg"
-                        class="h-8 w-8 dark:text-gray-300 text-teal-500 hover:text-green-400 dark:hover:text-green-400"
+                        class="h-8 w-8 dark:text-gray-300 text-teal-500 hover:text-green-400 dark:hover:text-green-400 cursor-pointer"
                         fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" onclick="darkmode()">
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
@@ -75,17 +76,17 @@
                 <!-- inc shopping cart -->
                 <a class="flex items-center hover:text-sky-700" href="../public/shoppingCart/shoppingCart.html">
                     <i
-                        class="bi bi-cart3 text-3xl mr-24 dark:text-gray-300 text-teal-500 hover:text-green-400 dark:hover:text-green-400"></i>
+                        class="bi bi-cart3 text-3xl mx-4 dark:text-gray-300 text-teal-500 hover:text-green-400 dark:hover:text-green-400"></i>
                 </a>
                 <!-- end shopping cart -->
             </ul>
-            <a class="lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 ext-gray-700 border-2 border-neutral-700  hover:border-none hover:bg-gradient-to-br from-green-400 to-blue-600 hover:text-white rounded-full dark:border-white dark:hover:bg-gradient-to-br dark:hover:text-white dark:hover:border-none dark:text-white"
+            <a class="lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 ext-gray-700 border-2 border-neutral-700  hover:border-none hover:bg-gradient-to-br from-green-400 to-blue-600 hover:text-white rounded-full dark:border-white dark:hover:bg-gradient-to-br dark:hover:text-white dark:hover:border-none dark:text-white cursor-pointer"
                 onclick="showLogin()" id="loginNavbarHorizontal">Iniciar Sesion</a>
-            <a class="lg:inline-block py-2 px-6 lg:mr-16 text-gray-700 border-2 border-neutral-700  hover:border-none hover:bg-gradient-to-br from-green-400 to-blue-600 hover:text-white rounded-full dark:border-white dark:hover:bg-gradient-to-br dark:hover:text-white dark:hover:border-none dark:text-white"
+            <a class="lg:inline-block py-2 px-6 lg:mr-16 text-gray-700 border-2 border-neutral-700  hover:border-none hover:bg-gradient-to-br from-green-400 to-blue-600 hover:text-white rounded-full dark:border-white dark:hover:bg-gradient-to-br dark:hover:text-white dark:hover:border-none dark:text-white cursor-pointer"
                 onclick="showRegister()" id="registerNavbarHorizontal">Registrarme</a>
             <button class="btn-primary-darkmode" id="logOut">Log-Out</button>
             <a class="bi bi-person text-3xl border-2 w-min rounded-full mx-4 mr-6 cursor-pointer" id="userNavbar"
-                href="../public/userProfile/userProfile.html"></a>
+                href="../userProfile/userProfile.html"></a>
             <div>
                 <div id="divRegister"></div>
                 <div id="divLogin"></div>
@@ -113,15 +114,15 @@
                     <ul>
                         <li class="mb-1">
                             <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300  dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded"
-                                href="../index.html">HOME</a>
+                                href="../public/index.html">HOME</a>
                         </li>
                         <li class="mb-1">
                             <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300 dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded"
-                                href="../plantillasweb/plantillas.html">PLANTILLAS WEB</a>
+                                href="../public/plantillasweb/plantillas.html">PLANTILLAS WEB</a>
                         </li>
                         <li class="mb-1">
                             <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300 dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded"
-                                href="../plugins/plugins.html">PLUGINS</a>
+                                href="../public/plugins/plugins.html">PLUGINS</a>
                         </li>
                         <li class="mb-1">
                             <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300 dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded"
@@ -152,37 +153,83 @@
     </div>
     <!-- fin navbar -->
 
-
-
-    <!-- SHOPPING CART -->
-    <div class="mx-auto w-10/12 mb-8 min-h-screen">
-        <h1 class="text-5xl pt-4 px-4">Shopping Cart</h1>
-        <div class="w-full h-1 bg-gray-300 my-6"></div>
-        <div class="flex justify-between w-full flex-col lg:flex-row">
-            <div class="border-4 border-gray-300 mx-4 mb-4 lg:mb-0 p-4 rounded-2xl w-5/5 lg:w-3/5 sm">
-                <div class="flex justify-between mx-3 flex-col sm:flex-row">
-                    <button class="btn-primary-darkmode my-2 mb-0 lg:m-0">Continue Shopping</button>
-                    <button class="btn-primary-darkmode my-2 lg:m-0">Empty Cart</button>
+    <div class="m-10 mx-4 sm:mx-20 md:mx-30 lg:mx-40 ">
+        <div class="flex justify-between">
+            <div class="flex">
+                <img src="" alt="" class="w-20 h-20 bg-gray-300 rounded-full">
+                <div class="flex flex-col">
+                    <h1 class="text-4xl m-2 font-medium" id="userNameProfile"></h1>
+                    <p class="text-sm m-2 font-medium" id="emailProfile"></p>
                 </div>
-                <div class="w-11/12 h-1 bg-gray-300 mx-auto my-5"></div>
-                <!-- PRODUCTOS DEL CARRITO DE COMPRAS -->
-                <div id="productos"></div>
             </div>
-            <div class="border-4 border-gray-300 w-5/5 lg:w-2/5 mx-4 p-4 rounded-2xl h-min">
-                <h3 class="text-2xl mx-2 sm:text-4xl">Total Cart</h3>
-                <div class="w-5/6 h-1 bg-gray-300 mx-4 my-6"></div>
-                <div class="text-center">
-                    <h2 class="text-green-500 text-4xl"><i class="text-xs no-underline relative bottom-3">$</i><i
-                            id="totalPrice"></i></h2>
-                    <p>Total savings: $12</p>
-                    <button class="btn-primary-darkmode">Buy</button>
-                    <button class="btn-primary-darkmode" id="generateInvoice">Generate Invoice</button>
-                </div>
+            <div class="flex items-center text-end">
+                <a href="../userProfile/userProfile.html"
+                    class="hover:border-b-2 hover:border-b-black p-2 ml-4">Profile</a>
+                <a href="#" class="hover:border-b-2 hover:border-b-black p-2 ml-4">Followers <i
+                        class="border-2 border-gray-400 rounded-lg pr-1">2.5M</i></a>
+                <a href="#" class="hover:border-b-2 hover:border-b-black p-2 ml-4">Following <i
+                        class="border-2 border-gray-400 rounded-lg pr-1">0</i></a>
+                <a href="#" class="hover:border-b-2 hover:border-b-black p-2 mx-4">Downloads</a>
+
             </div>
         </div>
     </div>
-    <!-- FIN SHOPPING CART -->
-    
+
+    <div class="px-10 ">
+        <h2 class="text-3xl uppercase">
+            Welcome and congratulations on becoming an autor with <br>
+            design ship
+        </h2><br>
+
+        <p class=" text-xl">
+            Now you can sell your digital items ti millions of users and make money fron it.
+        </p><br>
+
+        <div class="grid overflow-hidden grid-cols-2 grid-rows-1 gap-10 text-center text-gray-300">
+            <div class="box bg-gray-900 py-5 px-10 rounded-md">
+                <h3 class="text-2xl">
+                    Upload your firts items
+                </h3><br>
+                <p class="text-gray-500">
+                    start uploading your digital items and <br>
+                    working with our review team to make <br>
+                    sure they are in grat shape to start <br>
+                    selling
+                </p><br>
+                <button class="bg-slate-600 text-gray-300 rounded-lg px-4 py-1  hover:bg-gray-700">Upload my firts
+                    items</button>
+            </div>
+
+            <div class="box bg-gray-900 rounded-md py-5 px-10">
+                <h3 class="text-2xl">
+                    Your Profile
+                </h3><br>
+                <p class="text-gray-500">
+                    fill out your profile so uor buyers know<br>
+                    who created the items they're buying doing <br>
+                    this means you can start building relationship <br>
+                    sand a reputation on Design ship market
+                </p><br>
+                <button class="bg-slate-600 text-gray-300 rounded-lg px-4 py-1 hover:bg-gray-700">Take me to my
+                    profile</button>
+            </div>
+        </div><br>
+
+        <div class="grid overflow-hidden grid-cols-1 grid-rows-1 gap-1 text-center text-gray-300">
+            <div class="box bg-gray-900 rounded-md py-5 px-10">
+                <h3 class="text-2xl">
+                    Tax Requirements
+                </h3>
+                <p class="text-gray-500">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe porro quas, sit,<br>
+                    laboriosam eaque ducimus quam cum, officiis labore id temporibus deserunt amet <br>
+                    atque beatae eius totam ullam quisquam quod.
+                </p>
+            </div><br>
+        </div>
+    </div>
+
+
     <!-- FOOTER RESPONSIVE -->
     <footer class="w-full relative bottom-0">
         <div
@@ -192,11 +239,19 @@
                 <img class="h-6 pl-4 hidden md:inline-block md:w-[350px]" src="/public/imgs/name-logo.png" alt="">
             </div>
             <div
-                class="col-start-1 col-end-13 lg:col-start-8 lg:col-end-13 text-center text-4xl flex items-center py-2 ">
-                <i class="mx-2 bi bi-whatsapp"></i>
-                <i class="mx-2 bi bi-facebook"></i>
-                <i class="mx-2 bi bi-instagram"></i>
-                <i class="mx-2 bi bi-github"></i>
+                class="col-start-1 col-end-13 lg:col-start-9 lg:col-end-13 text-center text-4xl flex items-center py-4">
+                <a href="https://web.whatsapp.com">
+                    <i class="mx-2 bi bi-whatsapp hover:text-gray-300 dark:hover:text-green-400"></i>
+                </a>
+                <a href="https://es-la.facebook.com">
+                    <i class="mx-2 bi bi-facebook hover:text-gray-300 dark:hover:text-green-400"></i>
+                </a>
+                <a href="https://www.instagram.com">
+                    <i class="mx-2 bi bi-instagram hover:text-gray-300 dark:hover:text-green-400"></i>
+                </a>
+                <a href="https://github.com">
+                    <i class="mx-2 bi bi-github hover:text-gray-300 dark:hover:text-green-400"></i>
+                </a>
             </div>
         </div>
         <div
@@ -205,12 +260,10 @@
     </footer>
     <!-- END OF FOOTER RESPONSIVE -->
 
-    <script src="/public/darkmode.js"></script>
+    <script src="../darkmode.js"></script>
+    <script src="././plantillas.js"></script>
     <script src="../forms-LogIn-Register.js"></script>
-    <script src="../plantillasweb/plantillas.js"></script>
-    <script src="../shoppingCart/pdf.js"></script>
-    <script src="../fetch.js"></script>
-    <script src="../jsPDF-1.3.2/dist/jspdf.min.js"></script>
+    <script src="../userProfile/userProfile.js"></script>
 </body>
 
 </html>

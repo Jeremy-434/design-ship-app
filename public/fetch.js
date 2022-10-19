@@ -15,9 +15,9 @@ const obtainProducts = async () => {
             <img class="border-4 border-gray-300 rounded-xl w-20 h-20 lg:w-24 lg:h-24 m-2 mt-0" src="/public/imgs/logo.png"
                 alt="">
             <div class="text-xs sm:text-lg lg:my-2">
-                <h2 class="text-base sm:text-xl">${product.nombre}</h2>
-                <p><i class="text-sky-400">${product.descripcion}</i></p>
-                <p>Stock: ${product.stock}</p>
+                <h2 class="text-base sm:text-xl" name="productName">${product.nombre}</h2>
+                <p><i class="text-sky-400" name="productDescription">${product.descripcion}</i></p>
+                <p name="productStock">Stock: ${product.stock}</p>
             </div>
         </div>
         <div class="col-start-8 col-end-10 sm:col-start-10 sm:col-end-12 md:col-start-9 md:col-end-12 flex justify-around text-xl sm:text-3xl mb-2 lg:mb-0">
@@ -28,37 +28,36 @@ const obtainProducts = async () => {
     </div>
         `;
         });
-        //sumar precios
+        // console.log(document.getElementsByName(productName));
+        //SUMAR PRECIOS
         let total = 0;
         data.forEach(product => {
             let price = product.precio;
             total += parseInt(price);
         });
         totalPrice.innerHTML = total;
-        const options = {
-            method: 'DELETE',
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        }
-        let trashIcon = document.getElementById("trashIcon");
-        trashIcon.addEventListener("click", async () => {
-            try {
-                const res = await fetch(`http://127.0.0.1:8000/api/productos/${trashIcon.value}`, options);
-                console.log(trashIcon.value);
-                console.log("asd", res);
-                const data = await res.json();
-                console.log(data);
-                // data.forEach(product => {
-                //     res += product.id;
-                // });
-            } catch (error) {
-                console.log(error);
-            }
-        });
-
-
-
+        // const options = {
+        //     method: 'DELETE',
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     }
+        // }
+        // let trashIcon = document.getElementById("trashIcon");
+        // trashIcon.addEventListener("click", async () => {
+        //     try {
+        //         const res = await fetch(`http://127.0.0.1:8000/api/productos/${trashIcon.value}`, options);
+        //         console.log(trashIcon.value);
+        //         console.log("asd", res);
+        //         const data = await res.json();
+        //         console.log(data);
+        //         // data.forEach(product => {
+        //         //     res += product.id;
+        //         // });
+        //     } catch (error) {
+        //         console.log(error);
+        //     }
+        // });
+        return data;
     } catch (error) {
         console.log(error);
     }
@@ -66,6 +65,9 @@ const obtainProducts = async () => {
 
 obtainProducts();
 
+const exports = {
+    obtainProducts
+};
 
 // async function deleteProduct() {
 //     try {

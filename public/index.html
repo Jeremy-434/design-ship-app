@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,147 +9,201 @@
 	<link rel="stylesheet" href="./build/styles.css">
 	<title>Home</title>
 </head>
-<body class="font-fredoka bg-white dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300">
 
- 	<!-- inicio Navbar -->
- 	<nav class="relative py-4 flex justify-between items-center bg-white dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300 " >
-	<a class="text-2xl font-bold leading-none" href="./index.html">
-		<img src="/public/plantillasweb/image/icons/FIGURALOGO.svg" alt="logo" class="h-16 w-64 pt-2">
-	</a>
-	<div class="lg:hidden ">
-		<button class=" border-teal-500/ navbar-burger flex items-center text-teal-500 ">
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12 h-12">
-				<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
-			</svg>
-			
-		</button>
-	</div>
-	<ul class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-12 2xl:space-x-12  ">
-		<li><a class="text-sm dark:text-gray-300 dark:hover:text-teal-500  hover:text-teal-500 font-semibold" href="./index.html">HOME</a></li>
-		<li class="text-gray-300">
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-			</svg>
-		</li>
-		<li><a class="text-sm dark:text-gray-300 dark:hover:text-teal-500 hover:text-teal-500 font-semibold" href="./plantillasweb/plantillas.html">PLANTILLAS</a></li>
-		<li class="text-gray-300">
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-			</svg>
-		</li>
-		<li><a class="text-sm dark:text-gray-300 dark:hover:text-teal-500 hover:text-teal-500 font-semibold" href="./plugins/plugins.html">PLUGINS</a></li>
-		<li class="text-gray-300">
-			<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill" viewBox="0 0 24 24">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-			</svg>
-		</li>
+<body
+	class="font-fredoka bg-white dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300">
 
-		<!-- dark mode button -->
-		<a class="flex items-center hover:text-sky-700 href="#">
-			<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 dark:text-gray-300 text-teal-500 hover:text-green-400 dark:hover:text-green-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" onclick="darkmode()">
-				<path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-			</svg>        
-		</a>
-
-		<!-- end dark mode button -->
-
-  <!-- inc shopping cart -->
-  <a class="flex items-center hover:text-sky-700" href="../public/shoppingCart/shoppingCart.html">
-	<i class="bi bi-cart3 text-3xl mr-24 dark:text-gray-300 text-teal-500 hover:text-green-400 dark:hover:text-green-400"></i>
-   </a>
-<!-- end shopping cart -->
-	</ul>
-	<a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 ext-gray-700  border-2 border-neutral-700  hover:border-none  hover:bg-gradient-to-br  from-green-400 to-blue-600 hover:text-white rounded-full dark:border-white dark:hover:bg-gradient-to-br from-green-400 to-blue-600 dark:hover:text-white dark:hover:border-none dark:text-white" onclick="showLogin()">Iniciar Sesion</a>
-	<a class="hidden lg:inline-block py-2 px-6 lg:mr-16 text-gray-700  border-2 border-neutral-700  hover:border-none  hover:bg-gradient-to-br from-green-400 to-blue-600 hover:text-white rounded-full dark:border-white dark:hover:bg-gradient-to-br from-green-400 to-blue-600 dark:hover:text-white dark:hover:border-none dark:text-white" onclick="showRegister()">Registrarme</a>
-</nav>
-<div class="navbar-menu relative z-50 hidden  ">
-	<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25 "></div>
-	<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 border-r overflow-y-auto bg-white dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300">
-		<div class="flex items-center mb-8 ">
-			<a class="mr-auto text-3xl font-bold leading-none" href="#">
-			<img src="../public/plantillasweb/image/icons/FIGURALOGO.svg" alt="logo" class="h-12 w-12">
+	<!-- inicio Navbar -->
+	<div>
+		<nav
+			class="relative py-4 flex justify-between items-center bg-white dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300 ">
+			<a class="text-2xl font-bold leading-none" href="./index.html">
+				<img src="/public/plantillasweb/image/icons/FIGURALOGO.svg" alt="logo" class="h-16 w-64 pt-2">
 			</a>
-			<button class="navbar-close text-gray-500 ">
-				<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-				</svg>
-			</button>
-		</div>
-		<div class="bg-white dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300">
-			<ul >
-				<li class="mb-1">
-                    <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300  dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded" href="../index.html">HOME</a>
-                </li>
-                <li class="mb-1">
-                    <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300 dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded" href="../plantillasweb/plantillas.html">PLANTILLAS WEB</a>
-                </li>
-                <li class="mb-1">
-                    <a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300 dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded" href="../plugins/plugins.html">PLUGINS</a>
-                </li>
-				<li class="mb-1">
-					<a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300 dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded" href="#">SHOP</a>
-				</li>
-				<li class="mb-1">
-					<a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300 dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded" onclick="darkmode()">COLOR MODE</a>
-				</li>
-			</ul>
-		</div>
-		<div class="mt-auto bg-white dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300">
-			<div class="mt-auto">
-				<div class="pt-6">
-					<a class="block px-4 py-3 mb-2 leading-loose text-sm text-center font-regular text-gray-700  border-2 border-neutral-700  hover:border-none  hover:bg-gradient-to-br  from-green-400 to-blue-600 hover:text-white rounded-full dark:border-white dark:hover:bg-gradient-to-br from-green-400 to-blue-600 dark:hover:text-white dark:hover:border-none dark:text-white" href="#">Iniciar Sesion</a>
-					<a class="block px-4 py-3 mb-2 leading-loose text-sm text-center font-regular text-gray-700  border-2 border-neutral-700  hover:border-none hover:bg-gradient-to-br  from-green-400 to-blue-600 hover:text-white rounded-full dark:border-white dark:hover:bg-gradient-to-br from-green-400 to-blue-600 dark:hover:text-white dark:hover:border-none dark:text-white" href="#">Registrarse</a>
+			<div class="lg:hidden ">
+				<button class=" border-teal-500/ navbar-burger flex items-center text-teal-500 ">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+						stroke="currentColor" class="w-12 h-12">
+						<path stroke-linecap="round" stroke-linejoin="round"
+							d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
+					</svg>
+
+				</button>
 			</div>
-			<p class="my-4 text-xs text-center text-gray-400">
-				<span>Copyright ByDesignShip© 2022</span>
-			</p>
+			<ul
+				class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-12 2xl:space-x-12  ">
+				<li><a class="text-sm dark:text-gray-300 dark:hover:text-teal-500  hover:text-teal-500 font-semibold"
+						href="../public/index.html">HOME</a></li>
+				<li class="text-gray-300">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+						class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+					</svg>
+				</li>
+				<li><a class="text-sm dark:text-gray-300 dark:hover:text-teal-500 hover:text-teal-500 font-semibold"
+						href="../public/plantillasweb/plantillas.html">PLANTILLAS</a></li>
+				<li class="text-gray-300">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+						class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+					</svg>
+				</li>
+				<li><a class="text-sm dark:text-gray-300 dark:hover:text-teal-500 hover:text-teal-500 font-semibold"
+						href="../public/plugins/plugins.html">PLUGINS</a></li>
+				<li class="text-gray-300">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+						class="w-4 h-4 current-fill" viewBox="0 0 24 24">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+							d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+					</svg>
+				</li>
+
+				<!-- dark mode button -->
+				<a class="flex items-center hover:text-sky-700 href=" #">
+					<svg xmlns="http://www.w3.org/2000/svg"
+						class="h-8 w-8 dark:text-gray-300 text-teal-500 hover:text-green-400 dark:hover:text-green-400 cursor-pointer"
+						fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" onclick="darkmode()">
+						<path stroke-linecap="round" stroke-linejoin="round"
+							d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+					</svg>
+				</a>
+
+				<!-- end dark mode button -->
+
+				<!-- inc shopping cart -->
+				<a class="flex items-center hover:text-sky-700" href="../public/shoppingCart/shoppingCart.html">
+					<i
+						class="bi bi-cart3 text-3xl mx-4 dark:text-gray-300 text-teal-500 hover:text-green-400 dark:hover:text-green-400"></i>
+				</a>
+				<!-- end shopping cart -->
+			</ul>
+			<a class="lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 ext-gray-700 border-2 border-neutral-700  hover:border-none hover:bg-gradient-to-br from-green-400 to-blue-600 hover:text-white rounded-full dark:border-white dark:hover:bg-gradient-to-br dark:hover:text-white dark:hover:border-none dark:text-white cursor-pointer"
+				onclick="showLogin()" id="loginNavbarHorizontal">Iniciar Sesion</a>
+			<a class="lg:inline-block py-2 px-6 lg:mr-16 text-gray-700 border-2 border-neutral-700  hover:border-none hover:bg-gradient-to-br from-green-400 to-blue-600 hover:text-white rounded-full dark:border-white dark:hover:bg-gradient-to-br dark:hover:text-white dark:hover:border-none dark:text-white cursor-pointer"
+				onclick="showRegister()" id="registerNavbarHorizontal">Registrarme</a>
+			<button class="btn-primary-darkmode" id="logOut">Log-Out</button>
+			<a class="bi bi-person text-3xl border-2 w-min rounded-full mx-4 mr-6 cursor-pointer" id="userNavbar"
+				href="../public/userProfile/userProfile.html"></a>
+			<div>
+				<div id="divRegister"></div>
+				<div id="divLogin"></div>
+			</div>
+		</nav>
+		<div class="navbar-menu relative z-50 hidden  ">
+			<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25 "></div>
+			<nav
+				class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 border-r overflow-y-auto bg-white dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300">
+				<div class="flex items-center mb-8 ">
+					<a class="mr-auto text-3xl font-bold leading-none" href="#">
+						<img src="../public/plantillasweb/image/icons/FIGURALOGO.svg" alt="logo" class="h-12 w-12">
+					</a>
+					<button class="navbar-close text-gray-500 ">
+						<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+							xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+								d="M6 18L18 6M6 6l12 12">
+							</path>
+						</svg>
+					</button>
+				</div>
+				<div
+					class="bg-white dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300">
+					<ul>
+						<li class="mb-1">
+							<a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300  dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded"
+								href="../public/index.html">HOME</a>
+						</li>
+						<li class="mb-1">
+							<a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300 dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded"
+								href="../public/plantillasweb/plantillas.html">PLANTILLAS WEB</a>
+						</li>
+						<li class="mb-1">
+							<a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300 dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded"
+								href="../public/plugins/plugins.html">PLUGINS</a>
+						</li>
+						<li class="mb-1">
+							<a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300 dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded"
+								href="#">SHOP</a>
+						</li>
+						<li class="mb-1">
+							<a class="block p-4 text-sm font-semibold text-gray-700 hover:bg-sky-300 dark:text-gray-300 dark:hover:bg-sky-400/30  dark:hover:text-white rounded"
+								onclick="darkmode()">COLOR MODE</a>
+						</li>
+					</ul>
+				</div>
+				<div
+					class="mt-auto bg-white dark:bg-gradient-to-r dark:from-ship-purple-1 dark:to-ship-purple-2 dark:text-gray-300">
+					<div class="mt-auto">
+						<div class="pt-6">
+							<a class="block px-4 py-3 mb-2 leading-loose text-sm text-center font-regular text-gray-700  border-2 border-neutral-700  hover:border-none  hover:bg-gradient-to-br  from-green-400 to-blue-600 hover:text-white rounded-full dark:border-white dark:hover:bg-gradient-to-br dark:hover:text-white dark:hover:border-none dark:text-white"
+								href="#" onclick="showLogin()">Iniciar Sesion</a>
+							<a class="block px-4 py-3 mb-2 leading-loose text-sm text-center font-regular text-gray-700  border-2 border-neutral-700  hover:border-none hover:bg-gradient-to-br  from-green-400 to-blue-600 hover:text-white rounded-full dark:border-white dark:hover:bg-gradient-to-br 	 dark:hover:text-white dark:hover:border-none dark:text-white"
+								href="#" onclick="showRegister()">Registrarse</a>
+
+						</div>
+						<p class="my-4 text-xs text-center text-gray-400">
+							<span>Copyright ByDesignShip© 2022</span>
+						</p>
+					</div>
+			</nav>
 		</div>
-	</nav>
-</div>
-<!-- fin navbar -->
+	</div>
+	<!-- fin navbar -->
 
 
 	<!-- imagen de fondo -->
 	<img src="./imgs/dark.jpg" id="foto" alt="hero" class="w-full h-full object-cover object-center hidden dark:block">
 	<img src="./imgs/white.svg" id="foto" alt="hero" class="w-full h-full object-cover object-center dark:hidden ">
-<!-- fin imagen de fondo -->
-    
+	<!-- fin imagen de fondo -->
+
 	<div class="container mx-auto px-10 pt-10 text-center ">
-			<h1 class="text-2xl md:text-6xl lg:text-6xl font-medium text-center dark:text-gray-300 text-gray-700">NUESTROS SERVICIOS</h1>
+		<h1 class="text-2xl md:text-6xl lg:text-6xl font-medium text-center dark:text-gray-300 text-gray-700">NUESTROS
+			SERVICIOS</h1>
 	</div><br>
 
 	<!-- cards section -->
 	<div class="grid grid-cols-12 text-center mx-auto  justify-items-center ">
-		<div class="border-3 rounded-3xl border-2 border-white border-opacity-25 my-20 pb-11 bg-gray-900 col-start-1 col-end-13 w-60 md:w-60 md:col-start-4 md:col-end-6 ">
-			<img src="../public/plantillasweb/image/icons/ICONWEB.svg" class="w-40  mx-auto mt-5 justify-center" alt=""><br>
+		<div
+			class="border-3 rounded-3xl border-2 border-white border-opacity-25 my-20 pb-11 bg-gray-900 col-start-1 col-end-13 w-60 md:w-60 md:col-start-4 md:col-end-6 ">
+			<img src="../public/plantillasweb/image/icons/ICONWEB.svg" class="w-40  mx-auto mt-5 justify-center"
+				alt=""><br>
 			<h2 class="text-2xl text-gray-300 mt-2">PLANTILLAS</h2><br>
-			<p class="mx-2 text-xl text-gray-500 dark:text-gray-300">Nuestros diseños web 
+			<p class="mx-2 text-xl text-gray-500 dark:text-gray-300">Nuestros diseños web
 				son la mejor opción para
 				disponer de un sitio web diseñado
 				de forma profesional y atractiva.
 			</p><br>
 			<a href="../public/plantillasweb/plantillas.html">
-				<button class="border-2 text-gray-200 dark:text-gray-300 px-10 py-2 rounded-3xl  md:mt-[-2em] dark:hover:text-sky-400 dark:hover:border-sky-400">Ver mas</button>
-			</a>
-		</div>		
-		<div class="border-3 rounded-3xl border-2 border-white border-opacity-25 my-20 pb-11 bg-gray-900 dark:text-gray-300 col-start-2 col-end-13 w-60 md:w-60 md:col-start-12 md:col-end-6">
-			<img src="../public/plugins/images/icons/puzzle-icon.svg" class="w-32 mx-auto mt-5 justify-center" alt=""><br>
-			<h2 class="text-2xl text-gray-300 mt-2">PLANTILLAS</h2><br>
-			<p class="mx-2 text-xl text-gray-500 dark:text-gray-300"> Hemos hecho el trabajo duro por ti. ¡A continuación encontrarás los mejores plugins para tus paginas web.
-			</p><br>
-			<a href="../public/plantillasweb/plantillas.html">
-				<button class="border-2 text-gray-200 dark:text-gray-300 px-10 py-2 rounded-3xl  md:mt-[-2em] dark:hover:text-sky-400 dark:hover:border-sky-400">Ver mas</button>
+				<button
+					class="border-2 text-gray-200 dark:text-gray-300 px-10 py-2 rounded-3xl  md:mt-[-2em] dark:hover:text-sky-400 dark:hover:border-sky-400">Ver
+					mas</button>
 			</a>
 		</div>
-	</div><br>	
+		<div
+			class="border-3 rounded-3xl border-2 border-white border-opacity-25 my-20 pb-11 bg-gray-900 dark:text-gray-300 col-start-2 col-end-13 w-60 md:w-60 md:col-start-12 md:col-end-6">
+			<img src="../public/plugins/images/icons/puzzle-icon.svg" class="w-32 mx-auto mt-5 justify-center"
+				alt=""><br>
+			<h2 class="text-2xl text-gray-300 mt-2">PLANTILLAS</h2><br>
+			<p class="mx-2 text-xl text-gray-500 dark:text-gray-300"> Hemos hecho el trabajo duro por ti. ¡A
+				continuación encontrarás los mejores plugins para tus paginas web.
+			</p><br>
+			<a href="../public/plantillasweb/plantillas.html">
+				<button
+					class="border-2 text-gray-200 dark:text-gray-300 px-10 py-2 rounded-3xl  md:mt-[-2em] dark:hover:text-sky-400 dark:hover:border-sky-400">Ver
+					mas</button>
+			</a>
+		</div>
+	</div><br>
 	<!-- end of section cards -->
 
-   	<!-- text blog -->
+	<!-- text blog -->
 	<div class="container mx-auto px-10 pt-16 text-center">
 		<h1 class="text-2xl md:text-6xl lg:text-6xl font-medium text-center dark:text-gray-300 text-gray-700">BLOG</h1>
 	</div><br><br>
 	<!-- end of text blog -->
-	
+
 
 	<!-- inc carrousel -->
 	<div class="min-h-screen p-9 relative mt-[-10em] ">
@@ -158,90 +213,128 @@
 				<input class="sr-only peer" type="radio" name="carousel" id="carousel-1" checked />
 				<!-- content #1 -->
 				<div
-				class="w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white dark:bg-gray-900  shadow-black shadow-2xl  rounded-lg  transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
-				<img class="rounded-t-lg w-96 h-64" src="./imgs/img_access.jpg" alt="" />
-				<div class="py-4 px-8">
-				   <h1 class="hover:cursor-pointer mt-2 text-gray-900 dark:text-gray-300 font-medium text-2xl tracking-tight text-center">¿Es importante la accesibilidad en un sitio web?</h1>
-				   <p class="hover:cursor-pointer py-3 text-gray-600 dark:text-gray-500 leading-6 text-center">La accesibilidad Web significa que personas con algún tipo de discapacidad van a poder hacer uso de la Web. En concreto, al hablar de accesibilidad Web se está haciendo referencia aun diseño Web que va a permitir que estas personas puedan percibir. 
-				   </p>
+					class="w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white dark:bg-gray-900  shadow-black shadow-2xl  rounded-lg  transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
+					<img class="rounded-t-lg w-96 h-64" src="./imgs/img_access.jpg" alt="" />
+					<div class="py-4 px-8">
+						<h1
+							class="hover:cursor-pointer mt-2 text-gray-900 dark:text-gray-300 font-medium text-2xl tracking-tight text-center">
+							¿Es importante la accesibilidad en un sitio web?</h1>
+						<p class="hover:cursor-pointer py-3 text-gray-600 dark:text-gray-500 leading-6 text-center">La
+							accesibilidad Web significa que personas con algún tipo de discapacidad van a poder hacer
+							uso de la Web. En concreto, al hablar de accesibilidad Web se está haciendo referencia aun
+							diseño Web que va a permitir que estas personas puedan percibir.
+						</p>
+					</div>
+					<!-- controls -->
+					<div class="absolute top-1/2 w-full flex justify-between z-20">
+						<label for="carousel-3"
+							class="inline-block text-blue-900 cursor-pointer -translate-x-16 bg-white rounded-full shadow-md active:translate-y-0.5">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20"
+								fill="currentColor">
+								<path fill-rule="evenodd"
+									d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+									clip-rule="evenodd" />
+							</svg>
+						</label>
+						<label for="carousel-2"
+							class="inline-block text-blue-900 cursor-pointer translate-x-16 bg-white rounded-full shadow-md active:translate-y-0.5">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20"
+								fill="currentColor">
+								<path fill-rule="evenodd"
+									d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+									clip-rule="evenodd" />
+							</svg>
+						</label>
+					</div>
 				</div>
-				<!-- controls -->
-				<div class="absolute top-1/2 w-full flex justify-between z-20">
-				   <label for="carousel-3" class="inline-block text-blue-900 cursor-pointer -translate-x-16 bg-white rounded-full shadow-md active:translate-y-0.5">
-					  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
-						 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
-					  </svg>
-				   </label>
-				   <label for="carousel-2" class="inline-block text-blue-900 cursor-pointer translate-x-16 bg-white rounded-full shadow-md active:translate-y-0.5">
-					  <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
-						 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
-					  </svg>
-				   </label>
-				</div>
-			 </div>
-		  </div>
+			</div>
 			<!-- second -->
 			<div class="">
 				<input class="sr-only peer" type="radio" name="carousel" id="carousel-2" />
 				<!-- content #2 -->
 				<div
-				class="w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white dark:bg-gray-900 shadow-black shadow-2xl  rounded-lg  transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
-				<img class="rounded-t-lg w-96 h-64" src="./imgs/img_uxui.jpg" alt="" />
-				<div class="py-4 px-8">
-				   <h1 class="hover:cursor-pointer mt-2 text-gray-900 dark:text-gray-300 font-medium text-2xl tracking-tight text-center">Por que es importante un buen diseño UX - UI </h1>
-				  
-				   <p class="hover:cursor-pointer py-3 text-gray-600 dark:text-gray-500 leading-6 text-center">Conoce la importancia del UX/UI y los principales consejos para mejorar los procesos de diseño de la experiencia de usuario y la interfaz del usuario de tu empresa.
-				   </p>
+					class="w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white dark:bg-gray-900 shadow-black shadow-2xl  rounded-lg  transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
+					<img class="rounded-t-lg w-96 h-64" src="./imgs/img_uxui.jpg" alt="" />
+					<div class="py-4 px-8">
+						<h1
+							class="hover:cursor-pointer mt-2 text-gray-900 dark:text-gray-300 font-medium text-2xl tracking-tight text-center">
+							Por que es importante un buen diseño UX - UI </h1>
+
+						<p class="hover:cursor-pointer py-3 text-gray-600 dark:text-gray-500 leading-6 text-center">
+							Conoce la importancia del UX/UI y los principales consejos para mejorar los procesos de
+							diseño de la experiencia de usuario y la interfaz del usuario de tu empresa.
+						</p>
+					</div>
+					<!-- controls -->
+					<div class="absolute top-1/2 w-full flex justify-between z-20">
+						<label for="carousel-1"
+							class="inline-block text-violet-900 cursor-pointer -translate-x-16 bg-white rounded-full shadow-md active:translate-y-0.5">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20"
+								fill="currentColor">
+								<path fill-rule="evenodd"
+									d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+									clip-rule="evenodd" />
+							</svg>
+						</label>
+						<label for="carousel-3"
+							class="inline-block text-violet-900 cursor-pointer translate-x-16 bg-white rounded-full shadow-md active:translate-y-0.5">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20"
+								fill="currentColor">
+								<path fill-rule="evenodd"
+									d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+									clip-rule="evenodd" />
+							</svg>
+						</label>
+					</div>
 				</div>
-				   <!-- controls -->
-				   <div class="absolute top-1/2 w-full flex justify-between z-20">
-					  <label for="carousel-1" class="inline-block text-violet-900 cursor-pointer -translate-x-16 bg-white rounded-full shadow-md active:translate-y-0.5">
-						 <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
-							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
-						 </svg>
-					  </label>
-					  <label for="carousel-3" class="inline-block text-violet-900 cursor-pointer translate-x-16 bg-white rounded-full shadow-md active:translate-y-0.5">
-						 <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
-							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
-						 </svg>
-					  </label>
-				   </div>
-				</div>
-			 </div>
-			 <!-- three -->
-			 <div class="">
+			</div>
+			<!-- three -->
+			<div class="">
 				<input class="sr-only peer" type="radio" name="carousel" id="carousel-3" />
 				<!-- content #3 -->
 				<div
-				class="w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white dark:bg-gray-900 shadow-black shadow-2xl  rounded-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
-				<img class="rounded-t-lg w-96 h-64" src="./imgs/img_fr_bk.jpg" alt="" />
-				<div class="py-4 px-8">
-				   <h1 class="hover:cursor-pointer mt-2 text-gray-900 dark:text-gray-300 font-medium text-2xl tracking-tight text-center">Front End vs Back End: ¿Cuál es la diferencia?</h1>
-				   </h1>
-				   <p class="hover:cursor-pointer py-3 text-gray-600 dark:text-gray-300 leading-6 text-center">Básicamente se trata sobre que los desarrolladores de front y back end trabajan en diferentes “lados” de un sitio web. Mientras que el front-end tiene que ver con los aspectos visuales del sitio web que el usuario puede ver y experimentar, 
-					el back-end es todo lo que sucede en el fondo para que el front-end funcione.
-				   </p>
+					class="w-96 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white dark:bg-gray-900 shadow-black shadow-2xl  rounded-lg transition-all duration-300 opacity-0 peer-checked:opacity-100 peer-checked:z-10 z-0">
+					<img class="rounded-t-lg w-96 h-64" src="./imgs/img_fr_bk.jpg" alt="" />
+					<div class="py-4 px-8">
+						<h1
+							class="hover:cursor-pointer mt-2 text-gray-900 dark:text-gray-300 font-medium text-2xl tracking-tight text-center">
+							Front End vs Back End: ¿Cuál es la diferencia?</h1>
+						</h1>
+						<p class="hover:cursor-pointer py-3 text-gray-600 dark:text-gray-300 leading-6 text-center">
+							Básicamente se trata sobre que los desarrolladores de front y back end trabajan en
+							diferentes “lados” de un sitio web. Mientras que el front-end tiene que ver con los aspectos
+							visuales del sitio web que el usuario puede ver y experimentar,
+							el back-end es todo lo que sucede en el fondo para que el front-end funcione.
+						</p>
+					</div>
+					<!-- controls -->
+					<div class="absolute top-1/2 w-full flex justify-between z-20">
+						<label for="carousel-2"
+							class="inline-block text-sky-600 cursor-pointer -translate-x-16 bg-white rounded-full shadow-md active:translate-y-0.5">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20"
+								fill="currentColor">
+								<path fill-rule="evenodd"
+									d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+									clip-rule="evenodd" />
+							</svg>
+						</label>
+						<label for="carousel-1"
+							class="inline-block text-sky-600 cursor-pointer translate-x-16 bg-white rounded-full shadow-md active:translate-y-0.5">
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20"
+								fill="currentColor">
+								<path fill-rule="evenodd"
+									d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+									clip-rule="evenodd" />
+							</svg>
+						</label>
+					</div>
 				</div>
-				   <!-- controls -->
-				   <div class="absolute top-1/2 w-full flex justify-between z-20">
-					  <label for="carousel-2" class="inline-block text-sky-600 cursor-pointer -translate-x-16 bg-white rounded-full shadow-md active:translate-y-0.5">
-						 <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
-							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
-						 </svg>
-					  </label>
-					  <label for="carousel-1" class="inline-block text-sky-600 cursor-pointer translate-x-16 bg-white rounded-full shadow-md active:translate-y-0.5">
-						 <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" viewBox="0 0 20 20" fill="currentColor">
-							<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
-						 </svg>
-					  </label>
-				   </div>
-				</div>
-			 </div>
-		  </div>
-	   </div>
-     <!-- fin carrousel -->
+			</div>
+		</div>
+	</div>
+	<!-- fin carrousel -->
 
-	    <!-- text partners -->
+	<!-- text partners -->
 	<div class="container mx-auto px-10 mt-[-5em] text-center">
 		<h1 class="text-6xl font-medium  text-centertext-gray-300 pt-28">PARTNERS</h1>
 	</div><br><br>
@@ -256,10 +349,15 @@
 				</div>
 				<div>
 					<h2 class="text-gray-300 text-3xl font-medium">ADOBE</h2>
-					<p class="mt-2 text-gray-500">Adobe Creative Cloud es un servicio de Adobe que da a los usuarios acceso a los programas de diseño gráfico, edición de video, diseño web y servicios en la nube. Adobe CC trabaja a partir de un modelo de software como servicio, donde los consumidores no poseen el software, pero lo adquieren por una suscripción</p>
+					<p class="mt-2 text-gray-500">Adobe Creative Cloud es un servicio de Adobe que da a los usuarios
+						acceso a los programas de diseño gráfico, edición de video, diseño web y servicios en la nube.
+						Adobe CC trabaja a partir de un modelo de software como servicio, donde los consumidores no
+						poseen el software, pero lo adquieren por una suscripción</p>
 				</div>
 				<div class="flex justify-end mt-4">
-					<a href="https://www.adobe.com/" class="text-xl font-medium text-violet-900 hover:text-sky-900 dark:text-violet-400 dark:hover:text-sky-400">Ver más</a>
+					<a href="https://www.adobe.com/"
+						class="text-xl font-medium text-violet-900 hover:text-sky-900 dark:text-violet-400 dark:hover:text-sky-400">Ver
+						más</a>
 				</div>
 			</div>
 			<div class="bg-gray-900 rounded-lg shadow-black shadow-2xl  p-4 mt-11">
@@ -268,10 +366,14 @@
 				</div>
 				<div>
 					<h2 class="text-gray-300 text-3xl font-medium">FIGMA</h2>
-					<p class="mt-2 text-gray-500">Figma es un editor de gráficos vectorial y una herramienta de generación de prototipos, principalmente basada en la web, con características off-line adicionales habilitadas por aplicaciones de escritorio en macOS y Windows.</p>
+					<p class="mt-2 text-gray-500">Figma es un editor de gráficos vectorial y una herramienta de
+						generación de prototipos, principalmente basada en la web, con características off-line
+						adicionales habilitadas por aplicaciones de escritorio en macOS y Windows.</p>
 				</div>
 				<div class="flex justify-end mt-4">
-					<a href="https://www.figma.com/" class="text-xl font-medium text-violet-900 hover:text-sky-900 dark:text-violet-400 dark:hover:text-sky-400 pt-5">Ver más</a>
+					<a href="https://www.figma.com/"
+						class="text-xl font-medium text-violet-900 hover:text-sky-900 dark:text-violet-400 dark:hover:text-sky-400 pt-5">Ver
+						más</a>
 				</div>
 			</div>
 			<div class="bg-gray-900 rounded-lg  p-4 shadow-black shadow-2xl mt-11">
@@ -280,49 +382,56 @@
 				</div>
 				<div>
 					<h2 class="text-gray-300 text-3xl font-medium">COREL DRAW</h2>
-					<p class="mt-2 text-gray-500">CorelDRAW es un programa de software para editar gráficos vectoriales creado y lanzado al mercado por la compañías Corel Corporation en 1989. Es una suite de gráficos robusta, que proporciona muchas funciones para que los usuarios puedan editar gráficos.</p>
+					<p class="mt-2 text-gray-500">CorelDRAW es un programa de software para editar gráficos vectoriales
+						creado y lanzado al mercado por la compañías Corel Corporation en 1989. Es una suite de gráficos
+						robusta, que proporciona muchas funciones para que los usuarios puedan editar gráficos.</p>
 				</div>
 				<div class="flex justify-end mt-4">
-					<a href="https://www.coreldraw.com/la/" class="text-xl font-medium text-violet-900 hover:text-sky-900 dark:text-violet-400 dark:hover:text-sky-400 pt-5">Ver más</a>
+					<a href="https://www.coreldraw.com/la/"
+						class="text-xl font-medium text-violet-900 hover:text-sky-900 dark:text-violet-400 dark:hover:text-sky-400 pt-5">Ver
+						más</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	
-     </br></br> <br><br><br></br>
-	<!-- end of partners -->
-	
-	
-	
-    
 
-    <script src="./darkmode.js"></script>
-	 
+	</br></br> <br><br><br></br>
+	<!-- end of partners -->
+
 	<!-- FOOTER RESPONSIVE -->
-<footer class="w-full relative bottom-0">
-    <div
-        class="grid grid-cols-12 justify-items-center content-center bg-gradient-to-l from-gray-500 p-2 px-8 dark:bg-gradient-to-t dark:from-ship-purple-footer-2 dark:to-ship-purple-footer-1">
-        <div class="col-start-1 col-end-13 lg:col-end-8 flex flex-col md:flex-row items-center p-2">
-            <img class="w-[60px] sm:w-[80px]" src="/public/imgs/logo.png" alt="">
-            <img class="h-6 pl-4 hidden md:inline-block md:w-[350px]" src="/public/imgs/name-logo.png" alt="">
-        </div>
-        <div
-            class="col-start-1 col-end-13 lg:col-start-8 lg:col-end-13 text-center text-4xl flex items-center py-2 ">
-            <i class="mx-2 bi bi-whatsapp"></i>
-            <i class="mx-2 bi bi-facebook"></i>
-            <i class="mx-2 bi bi-instagram"></i>
-            <i class="mx-2 bi bi-github"></i>
-        </div>
-    </div>
-    <div
-        class="text-center p-3 bg-gradient-to-r from-gray-500 dark:from-ship-purple-1 dark:to-ship-purple-1 text-xs">
-        Copyright By Design Ship 2022©</div>
-</footer>
+	<footer class="w-full relative bottom-0">
+		<div
+			class="grid grid-cols-12 justify-items-center content-center bg-gradient-to-l from-gray-500 p-2 px-8 dark:bg-gradient-to-t dark:from-ship-purple-footer-2 dark:to-ship-purple-footer-1">
+			<div class="col-start-1 col-end-13 lg:col-end-8 flex flex-col md:flex-row items-center p-2">
+				<img class="w-[60px] sm:w-[80px]" src="/public/imgs/logo.png" alt="">
+				<img class="h-6 pl-4 hidden md:inline-block md:w-[350px]" src="/public/imgs/name-logo.png" alt="">
+			</div>
+			<div
+				class="col-start-1 col-end-13 lg:col-start-9 lg:col-end-13 text-center text-4xl flex items-center py-4">
+				<a href="https://web.whatsapp.com">
+					<i class="mx-2 bi bi-whatsapp hover:text-gray-300 dark:hover:text-green-400"></i>
+				</a>
+				<a href="https://es-la.facebook.com">
+					<i class="mx-2 bi bi-facebook hover:text-gray-300 dark:hover:text-green-400"></i>
+				</a>
+				<a href="https://www.instagram.com">
+					<i class="mx-2 bi bi-instagram hover:text-gray-300 dark:hover:text-green-400"></i>
+				</a>
+				<a href="https://github.com">
+					<i class="mx-2 bi bi-github hover:text-gray-300 dark:hover:text-green-400"></i>
+				</a>
+			</div>
+		</div>
+		<div
+			class="text-center p-3 bg-gradient-to-r from-gray-500 dark:from-ship-purple-1 dark:to-ship-purple-1 text-xs">
+			Copyright By Design Ship 2022©</div>
+	</footer>
 	<!-- END OF FOOTER RESPONSIVE -->
 
-	<script src="../public/darkmode.js"></script>		
+	<script src="../public/darkmode.js"></script>
 	<script src="../public/plantillasweb/plantillas.js"></script>
 	<script src="./forms-LogIn-Register.js"></script>
-	
+
 </body>
+
 </html>
