@@ -1,7 +1,7 @@
 # design-ship-app
 
 
-Claboradores ->
+Colaboradores ->
 
 -Nicolas Zapata
 
